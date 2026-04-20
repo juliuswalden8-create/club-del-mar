@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Static local site for Club Del Mar",
   "scripts": {
+    "build": "node -e \"console.log('No build step required for Club Del Mar')\"",
     "dev": "node server.js",
     "start": "node server.js"
   },
