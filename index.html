@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Club Del Mar | Luxury Dining</title>
+    <title>Club Del Mar | Seafront Escape</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -35,7 +35,7 @@
               </svg>
             </span>
           </span>
-          <small class="brand-tagline" data-i18n="brand.tagline">Luxury seafront dining, brunch and cocktails</small>
+          <small class="brand-tagline" data-i18n="brand.tagline">Seafront brunch, cocktails and terrace afternoons</small>
         </a>
 
         <nav class="site-nav" aria-label="Main navigation">
@@ -60,50 +60,76 @@
       <main id="top">
         <section class="hero-cinematic" id="overview">
           <div class="hero-scrim"></div>
-          <div class="hero-grid">
-            <div class="hero-copy" data-reveal>
-              <p class="eyebrow" data-i18n="hero.kicker">Michelin-inspired hospitality on the Fuengirola promenade</p>
-              <h1 data-i18n="hero.title">Where luxury meets taste</h1>
-              <p class="hero-lead" data-i18n="hero.lead">
-                Club Del Mar reimagined as a destination dining address: cinematic, elegant and designed to convert discerning guests from first glance to confirmed reservation.
-              </p>
+          <div class="hero-slider hero-slider-stage" data-slider>
+            <figure class="hero-slide is-active" data-slide>
+              <img src="./assets/photodump/4de96ce7-e6a3-4a47-8f80-cd42e5b8e7ce(2).jpg.webp" alt="Club Del Mar terrace chairs and facade" />
+              <figcaption>
+                <span class="slide-kicker" data-i18n="hero.slide1Kicker">Terrace mood</span>
+                <strong data-i18n="hero.slide1Title">Open-air seating, soft colours and promenade energy</strong>
+              </figcaption>
+            </figure>
+            <figure class="hero-slide" data-slide>
+              <img src="./assets/photodump/53de9f8b-98b9-4cfb-9bc7-372e2f76a72f(2).jpg.webp" alt="Club Del Mar brunch board with coffee and fruit" />
+              <figcaption>
+                <span class="slide-kicker" data-i18n="hero.slide2Kicker">Signature brunch</span>
+                <strong data-i18n="hero.slide2Title">Generous breakfast boards designed for slower mornings</strong>
+              </figcaption>
+            </figure>
+            <figure class="hero-slide" data-slide>
+              <img src="./assets/photodump/32f266ff-42da-4d64-912d-788f9f0e1368(2).jpg.webp" alt="Cocktails served on the Club Del Mar terrace" />
+              <figcaption>
+                <span class="slide-kicker" data-i18n="hero.slide3Kicker">Golden hour</span>
+                <strong data-i18n="hero.slide3Title">Cocktails, sea light and a more escapist evening transition</strong>
+              </figcaption>
+            </figure>
 
-              <div class="hero-actions">
-                <a class="button button-primary" href="#reservation" data-i18n="hero.ctaPrimary">Reserve now</a>
-                <a class="button button-secondary" href="#menu" data-i18n="hero.ctaSecondary">Explore the menus</a>
+            <div class="hero-overlay">
+              <p class="hero-location" data-i18n="hero.locationLine">Fuengirola · Costa del Sol</p>
+
+              <div class="hero-copy" data-reveal>
+                <p class="eyebrow" data-i18n="hero.kicker">Fuengirola promenade mornings, terrace lunches and sunset cocktails</p>
+                <h1 data-i18n="hero.title">A brighter Mediterranean escape by the sea</h1>
+                <p class="hero-script" data-i18n="hero.script">Brunch, cocktails and long lunches by the promenade</p>
+                <p class="hero-lead" data-i18n="hero.lead">
+                  A warmer, lighter Club Del Mar with tropical resort energy,
+                  curated imagery and a reservation flow that feels effortless
+                  from the first click.
+                </p>
+
+                <div class="hero-actions">
+                  <a class="button button-primary" href="#reservation" data-i18n="hero.ctaPrimary">Reserve now</a>
+                  <a class="button button-secondary" href="#menu" data-i18n="hero.ctaSecondary">View the menus</a>
+                </div>
               </div>
 
-              <div class="hero-awards" aria-label="Social proof">
-                <span data-i18n="hero.award1">Tripadvisor 4.8 / 24 reviews</span>
-                <span data-i18n="hero.award2">Travellers' Choice top 10%</span>
-                <span data-i18n="hero.award3">Paseo Maritimo Rey de Espana, 6</span>
+              <div class="hero-bottom">
+                <div class="hero-awards" aria-label="Social proof">
+                  <span data-i18n="hero.award1">Tripadvisor 4.8 / 24 reviews</span>
+                  <span data-i18n="hero.award2">Travellers' Choice top 10%</span>
+                  <span data-i18n="hero.award3">Paseo Maritimo Rey de Espana, 6</span>
+                </div>
+
+                <div class="hero-slider-ui">
+                  <div class="slider-dots" aria-label="Hero slides">
+                    <button class="slider-dot is-active" type="button" data-slide-dot="0" aria-label="Slide 1"></button>
+                    <button class="slider-dot" type="button" data-slide-dot="1" aria-label="Slide 2"></button>
+                    <button class="slider-dot" type="button" data-slide-dot="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="hero-stats">
+                    <article class="stat-card">
+                      <span data-i18n="hero.stat1Label">Guest score</span>
+                      <strong>4.8/5</strong>
+                      <small data-i18n="hero.stat1Value">Tripadvisor public rating</small>
+                    </article>
+                    <article class="stat-card">
+                      <span data-i18n="hero.stat2Label">Dining rhythm</span>
+                      <strong>09:30 - 16:30</strong>
+                      <small data-i18n="hero.stat2Value">Tuesday to Sunday</small>
+                    </article>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <aside class="hero-side" data-reveal>
-              <p class="eyebrow" data-i18n="hero.sideKicker">An unforgettable dining experience</p>
-              <h2 data-i18n="hero.sideTitle">Refined enough for destination dinners, relaxed enough for long terrace lunches.</h2>
-              <p data-i18n="hero.sideLead">
-                Signature brunch, terrace cocktails, elevated service and a seafront setting that feels more like a ritual than a stop.
-              </p>
-
-              <div class="hero-stats">
-                <article class="stat-card">
-                  <span data-i18n="hero.stat1Label">Guest score</span>
-                  <strong>4.8/5</strong>
-                  <small data-i18n="hero.stat1Value">Tripadvisor public rating</small>
-                </article>
-                <article class="stat-card">
-                  <span data-i18n="hero.stat2Label">Dining rhythm</span>
-                  <strong>09:30 - 16:30</strong>
-                  <small data-i18n="hero.stat2Value">Tuesday to Sunday</small>
-                </article>
-                <article class="stat-card">
-                  <span data-i18n="hero.stat3Label">Experience</span>
-                  <strong data-i18n="hero.stat3Value">Brunch, cocktails, tasting moments</strong>
-                </article>
-              </div>
-            </aside>
           </div>
         </section>
 
@@ -436,9 +462,10 @@
           <div class="reservation-grid">
             <article class="booking-panel" data-reveal>
               <p class="eyebrow" data-i18n="booking.eyebrow">Online table booking</p>
-              <h2 data-i18n="booking.title">Elegant booking, fast conversion and a built-in VIP reservation option.</h2>
+              <h2 data-i18n="booking.title">Online table booking made warm, easy and terrace-ready.</h2>
               <p class="section-lead" data-i18n="booking.lead">
-                The form stays operational, but the presentation now feels premium enough to belong to a destination restaurant.
+                Choose date, time and guests and send your request directly to
+                the reservation system.
               </p>
 
               <form class="booking-form" id="booking-form">
@@ -487,11 +514,6 @@
                     </select>
                   </label>
 
-                  <label class="field field-full booking-checkbox">
-                    <input type="checkbox" name="vip" />
-                    <span data-i18n="booking.vip">VIP reservation request</span>
-                  </label>
-
                   <label class="field field-full">
                     <span data-i18n="booking.notes">Notes</span>
                     <textarea name="notes" rows="4" maxlength="500"></textarea>
@@ -508,37 +530,101 @@
                     data-i18n="booking.statusHint"
                     data-status-key="booking.statusHint"
                   >
-                    Reservations are saved to the backend and available from /api/bookings.
+                    Your request is sent to the reservation system and answered as soon as possible.
                   </p>
                 </div>
               </form>
             </article>
 
-            <aside class="vip-panel" data-reveal>
-              <p class="eyebrow" data-i18n="vip.eyebrow">Premium membership</p>
-              <h2 data-i18n="vip.title">VIP guest club for priority bookings, special events and higher-touch hospitality.</h2>
-              <p class="section-lead" data-i18n="vip.lead">
-                Position the restaurant as a brand guests want ongoing access to, not just a one-time reservation.
+            <aside class="reservation-note-panel" data-reveal>
+              <p class="eyebrow" data-i18n="booking.sideEyebrow">Private celebrations</p>
+              <h2 data-i18n="booking.sideTitle">For birthdays, brunch groups and long, sunlit tables by the promenade.</h2>
+              <p class="section-lead" data-i18n="booking.sideLead">
+                Club Del Mar should still feel like the place you choose for the
+                nicer table, the slower lunch and the gathering people remember
+                after the weekend ends.
               </p>
 
-              <ul class="luxury-list vip-list">
-                <li data-i18n="vip.point1">Priority access to high-demand weekends and private event nights</li>
-                <li data-i18n="vip.point2">Invitations to tasting launches, cocktail previews and hosted experiences</li>
-                <li data-i18n="vip.point3">A stronger reason to return, recommend and upgrade the visit</li>
+              <ul class="luxury-list occasion-list">
+                <li data-i18n="booking.sidePoint1">Birthday lunches, private dinners and relaxed celebration tables</li>
+                <li data-i18n="booking.sidePoint2">Promenade-facing seating, cocktails and an all-day tropical mood</li>
+                <li data-i18n="booking.sidePoint3">Group-friendly hospitality without losing the polished atmosphere</li>
               </ul>
 
-              <a class="button button-secondary" href="mailto:alain.de.ridder6@telenet.be?subject=Club%20Del%20Mar%20VIP%20Guest%20Club" data-i18n="vip.cta">Request VIP access</a>
+              <a class="button button-secondary" href="mailto:alain.de.ridder6@telenet.be?subject=Club%20Del%20Mar%20Private%20Dining" data-i18n="booking.sideCta">Plan a group booking</a>
             </aside>
           </div>
         </section>
 
         <footer class="site-footer" data-reveal>
-          <p class="sources-note" data-i18n="footer.sources">
-            Tripadvisor review section uses public review titles, dates and rating context from Club Del Mar's Tripadvisor listing. Google Maps is embedded for live location context.
-          </p>
-          <div class="footer-links">
-            <a href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener">Tripadvisor</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Club+Del+Mar,+Paseo+Maritimo+Rey+de+Espana+6,+Fuengirola" target="_blank" rel="noopener">Google Maps</a>
+          <div class="footer-grid">
+            <div class="footer-brand-block">
+              <a class="brand footer-brand" href="#top" aria-label="Club Del Mar">
+                <span class="brand-logo" aria-hidden="true">
+                  <span class="brand-word brand-word-club">Club</span>
+                  <span class="brand-word brand-word-del">del</span>
+                  <span class="brand-word brand-word-mar">Mar</span>
+                  <span class="brand-palm">
+                    <svg viewBox="0 0 120 120" role="presentation" focusable="false">
+                      <g class="palm-shadow" transform="translate(6 6)">
+                        <ellipse cx="60" cy="32" rx="12" ry="34" transform="rotate(-68 60 32)" />
+                        <ellipse cx="60" cy="29" rx="12" ry="32" transform="rotate(-30 60 29)" />
+                        <ellipse cx="60" cy="24" rx="11" ry="28" />
+                        <ellipse cx="60" cy="29" rx="12" ry="32" transform="rotate(30 60 29)" />
+                        <ellipse cx="60" cy="32" rx="12" ry="34" transform="rotate(68 60 32)" />
+                        <path d="M55 48 C56 64 56 83 48 108 L64 108 C66 84 66 66 67 48 Z" />
+                      </g>
+                      <g class="palm-main">
+                        <ellipse cx="60" cy="32" rx="12" ry="34" transform="rotate(-68 60 32)" />
+                        <ellipse cx="60" cy="29" rx="12" ry="32" transform="rotate(-30 60 29)" />
+                        <ellipse cx="60" cy="24" rx="11" ry="28" />
+                        <ellipse cx="60" cy="29" rx="12" ry="32" transform="rotate(30 60 29)" />
+                        <ellipse cx="60" cy="32" rx="12" ry="34" transform="rotate(68 60 32)" />
+                        <path d="M55 48 C56 64 56 83 48 108 L64 108 C66 84 66 66 67 48 Z" />
+                      </g>
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <p class="footer-description" data-i18n="footer.description">
+                Seafront brunch, cocktails and long lunches made for slower
+                afternoons on the Fuengirola promenade.
+              </p>
+              <div class="footer-socials">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+                <a href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener" aria-label="Tripadvisor">TA</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Club+Del+Mar,+Paseo+Maritimo+Rey+de+Espana+6,+Fuengirola" target="_blank" rel="noopener" aria-label="Google Maps">GM</a>
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <p class="footer-heading" data-i18n="footer.explore">Explore</p>
+              <div class="footer-link-list">
+                <a href="#overview" data-i18n="footer.about">About</a>
+                <a href="#menu" data-i18n="footer.menu">Menu</a>
+                <a href="#gallery" data-i18n="footer.gallery">Gallery</a>
+                <a href="#voices" data-i18n="footer.reviews">Reviews</a>
+                <a href="#visit" data-i18n="footer.findUs">Find us</a>
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <p class="footer-heading" data-i18n="footer.visitHeading">Visit</p>
+              <div class="footer-visit">
+                <p>Paseo Maritimo Rey de Espana, 6<br />29640 Fuengirola, Malaga</p>
+                <a href="tel:+34623133417">+34 623 13 34 17</a>
+                <a href="mailto:alain.de.ridder6@telenet.be">alain.de.ridder6@telenet.be</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom-bar">
+            <p class="sources-note" data-i18n="footer.sources">
+              Tripadvisor review titles and traveller details come from Club Del
+              Mar's public listing, while Google Maps is embedded for real
+              location context.
+            </p>
+            <a class="footer-book-pill" href="#reservation" data-i18n="footer.book">Book now</a>
           </div>
         </footer>
       </main>
@@ -547,34 +633,37 @@
     <script>
       const translations = {
         en: {
-          "meta.title": "Club Del Mar | Luxury Dining",
-          "brand.tagline": "Luxury seafront dining, brunch and cocktails",
+          "meta.title": "Club Del Mar | Seafront Escape",
+          "brand.tagline": "Seafront brunch, cocktails and terrace afternoons",
           "nav.experience": "Experience",
           "nav.gallery": "Gallery",
           "nav.menu": "Menu",
           "nav.reviews": "Reviews",
           "nav.visit": "Visit",
           "cta.book": "Book a table",
-          "hero.kicker": "Michelin-inspired hospitality on the Fuengirola promenade",
-          "hero.title": "Where luxury meets taste",
-          "hero.lead": "Club Del Mar reimagined as a destination dining address: cinematic, elegant and designed to convert discerning guests from first glance to confirmed reservation.",
+          "hero.kicker": "Fuengirola promenade mornings, terrace lunches and sunset cocktails",
+          "hero.title": "A brighter Mediterranean escape by the sea",
+          "hero.locationLine": "Fuengirola · Costa del Sol",
+          "hero.script": "Brunch, cocktails and long lunches by the promenade",
+          "hero.lead": "A warmer, lighter Club Del Mar with tropical resort energy, curated imagery and a reservation flow that feels effortless from the first click.",
           "hero.ctaPrimary": "Reserve now",
-          "hero.ctaSecondary": "Explore the menus",
+          "hero.ctaSecondary": "View the menus",
           "hero.award1": "Tripadvisor 4.8 / 24 reviews",
           "hero.award2": "Travellers' Choice top 10%",
           "hero.award3": "Paseo Maritimo Rey de Espana, 6",
-          "hero.sideKicker": "An unforgettable dining experience",
-          "hero.sideTitle": "Refined enough for destination dinners, relaxed enough for long terrace lunches.",
-          "hero.sideLead": "Signature brunch, terrace cocktails, elevated service and a seafront setting that feels more like a ritual than a stop.",
+          "hero.slide1Kicker": "Terrace mood",
+          "hero.slide1Title": "Open-air seating, soft colours and promenade energy",
+          "hero.slide2Kicker": "Signature brunch",
+          "hero.slide2Title": "Generous breakfast boards designed for slower mornings",
+          "hero.slide3Kicker": "Golden hour",
+          "hero.slide3Title": "Cocktails, sea light and a more escapist evening transition",
           "hero.stat1Label": "Guest score",
           "hero.stat1Value": "Tripadvisor public rating",
           "hero.stat2Label": "Dining rhythm",
           "hero.stat2Value": "Tuesday to Sunday",
-          "hero.stat3Label": "Experience",
-          "hero.stat3Value": "Brunch, cocktails, tasting moments",
           "proof.eyebrow": "Social proof",
-          "proof.title": "Built around real guest trust, elevated service cues and destination-level positioning.",
-          "proof.lead": "The layout now feels like a hospitality brand, not a review template, while keeping genuine public signals visible and credible.",
+          "proof.title": "Sunlit hospitality, real guest proof and a stronger destination feeling from the first scroll.",
+          "proof.lead": "The page now feels like a warm seafront restaurant brand instead of a dark concept deck, while keeping the public trust signals visible.",
           "proof.card1Title": "Tripadvisor-led trust",
           "proof.card1Copy": "Real public reviews, a 4.8 score and Travellers' Choice positioning anchor the brand in guest proof.",
           "proof.card2Title": "Google Maps arrival",
@@ -599,16 +688,16 @@
           "events.eyebrow": "Private dining & events",
           "events.title": "Designed for birthdays, private dinners, corporate tables and celebration-driven bookings.",
           "events.lead": "The page now sells occasion dining, not just casual drop-ins.",
-          "reviews.eyebrow": "Tripadvisor review edit",
-          "reviews.title": "Real public review signals, restyled into a more premium editorial presentation.",
-          "reviews.lead": "Review titles, dates and guest origins come from public Tripadvisor material; the body copy below is paraphrased for clarity and presentation.",
+          "reviews.eyebrow": "Guest reviews",
+          "reviews.title": "Real Tripadvisor praise, restyled with a warmer editorial feel.",
+          "reviews.lead": "Review titles, dates and traveller details come from public Tripadvisor material; the summaries below are paraphrased for clarity and presentation.",
           "reviews.cta": "Read on Tripadvisor",
           "gallery.eyebrow": "Gallery",
-          "gallery.title": "High-end visual storytelling for food, atmosphere and arrival moments.",
-          "gallery.lead": "The imagery now feels curated, cinematic and sales-oriented instead of looking like a loose photo dump.",
+          "gallery.title": "Curated terrace, cocktail and brunch imagery that keeps the page alive.",
+          "gallery.lead": "The gallery now feels warmer, lighter and more destination-led while still using the restaurant's real visual material.",
           "visit.eyebrow": "Location, arrival & contact",
-          "visit.title": "A real Google Maps embed, stronger arrival cues and a cleaner location section.",
-          "visit.lead": "This part now feels credible and useful instead of illustrative, with live map context and direct actions.",
+          "visit.title": "Real directions, clear contact details and an arrival section guests can actually use.",
+          "visit.lead": "Live map context, clean contact actions and clearer opening hours keep the journey from browse to booking simple.",
           "visit.addressLabel": "Address",
           "visit.arrivalLabel": "Arrival",
           "visit.arrival": "Promenade-side arrival, nearby parking and easy walk-up access for local and destination guests.",
@@ -625,8 +714,8 @@
           "visit.daySunday": "Sunday",
           "visit.closed": "Closed",
           "booking.eyebrow": "Online table booking",
-          "booking.title": "Elegant booking, fast conversion and a built-in VIP reservation option.",
-          "booking.lead": "The form stays operational, but the presentation now feels premium enough to belong to a destination restaurant.",
+          "booking.title": "Online table booking made warm, easy and terrace-ready.",
+          "booking.lead": "Choose date, time and guests and send your request directly to the reservation system.",
           "booking.name": "Name",
           "booking.email": "Email",
           "booking.phone": "Phone",
@@ -634,51 +723,62 @@
           "booking.time": "Time",
           "booking.guests": "Guests",
           "booking.selectGuests": "Select",
-          "booking.vip": "VIP reservation request",
           "booking.notes": "Notes",
           "booking.submit": "Send reservation",
-          "booking.statusHint": "Reservations are saved to the backend and available from /api/bookings.",
+          "booking.statusHint": "Your request is sent to the reservation system and answered as soon as possible.",
           "booking.loading": "Sending reservation...",
           "booking.success": "Reservation received. Reference: {reference}.",
           "booking.error": "The reservation could not be saved. Please try again.",
-          "vip.eyebrow": "Premium membership",
-          "vip.title": "VIP guest club for priority bookings, special events and higher-touch hospitality.",
-          "vip.lead": "Position the restaurant as a brand guests want ongoing access to, not just a one-time reservation.",
-          "vip.point1": "Priority access to high-demand weekends and private event nights",
-          "vip.point2": "Invitations to tasting launches, cocktail previews and hosted experiences",
-          "vip.point3": "A stronger reason to return, recommend and upgrade the visit",
-          "vip.cta": "Request VIP access",
-          "footer.sources": "Tripadvisor review section uses public review titles, dates and rating context from Club Del Mar's Tripadvisor listing. Google Maps is embedded for live location context."
+          "booking.sideEyebrow": "Private celebrations",
+          "booking.sideTitle": "For birthdays, brunch groups and long, sunlit tables by the promenade.",
+          "booking.sideLead": "Club Del Mar should still feel like the place you choose for the nicer table, the slower lunch and the gathering people remember after the weekend ends.",
+          "booking.sidePoint1": "Birthday lunches, private dinners and relaxed celebration tables",
+          "booking.sidePoint2": "Promenade-facing seating, cocktails and an all-day tropical mood",
+          "booking.sidePoint3": "Group-friendly hospitality without losing the polished atmosphere",
+          "booking.sideCta": "Plan a group booking",
+          "footer.description": "Seafront brunch, cocktails and long lunches made for slower afternoons on the Fuengirola promenade.",
+          "footer.explore": "Explore",
+          "footer.about": "About",
+          "footer.menu": "Menu",
+          "footer.gallery": "Gallery",
+          "footer.reviews": "Reviews",
+          "footer.findUs": "Find us",
+          "footer.visitHeading": "Visit",
+          "footer.book": "Book now",
+          "footer.sources": "Tripadvisor review titles and traveller details come from Club Del Mar's public listing, while Google Maps is embedded for real location context."
         },
         es: {
-          "meta.title": "Club Del Mar | Dining de lujo",
-          "brand.tagline": "Dining frente al mar, brunch y cocteles",
+          "meta.title": "Club Del Mar | Escape frente al mar",
+          "brand.tagline": "Brunch frente al mar, cocteles y tardes de terraza",
           "nav.experience": "Experiencia",
           "nav.gallery": "Galeria",
           "nav.menu": "Menu",
           "nav.reviews": "Resenas",
           "nav.visit": "Visita",
           "cta.book": "Reservar mesa",
-          "hero.kicker": "Hospitalidad inspirada en Michelin en el paseo de Fuengirola",
-          "hero.title": "Donde el lujo se encuentra con el sabor",
-          "hero.lead": "Club Del Mar reinterpretado como un destino gastronomico: cinematografico, elegante y pensado para convertir desde la primera impresion hasta la reserva.",
+          "hero.kicker": "Mananas en el paseo de Fuengirola, almuerzos de terraza y cocteles al atardecer",
+          "hero.title": "Una escapada mediterranea mas luminosa junto al mar",
+          "hero.locationLine": "Fuengirola · Costa del Sol",
+          "hero.script": "Brunch, cocteles y almuerzos largos junto al paseo",
+          "hero.lead": "Un Club Del Mar mas calido, mas claro y mas tropical, con energia de resort, imagineria curada y una reserva que se siente facil desde el primer click.",
           "hero.ctaPrimary": "Reservar ahora",
-          "hero.ctaSecondary": "Explorar menus",
+          "hero.ctaSecondary": "Ver menus",
           "hero.award1": "Tripadvisor 4.8 / 24 resenas",
           "hero.award2": "Travellers' Choice top 10%",
           "hero.award3": "Paseo Maritimo Rey de Espana, 6",
-          "hero.sideKicker": "Una experiencia gastronomica inolvidable",
-          "hero.sideTitle": "Lo bastante refinado para cenas destino y lo bastante relajado para largos almuerzos en terraza.",
-          "hero.sideLead": "Brunch de firma, cocteles de terraza, servicio elevado y un entorno frente al mar que se siente mas ritual que parada.",
+          "hero.slide1Kicker": "Terraza",
+          "hero.slide1Title": "Asientos al aire libre, colores suaves y energia del paseo",
+          "hero.slide2Kicker": "Brunch de firma",
+          "hero.slide2Title": "Tablas generosas de desayuno para mananas mas lentas",
+          "hero.slide3Kicker": "Golden hour",
+          "hero.slide3Title": "Cocteles, luz de mar y una transicion mas escapista hacia la tarde",
           "hero.stat1Label": "Puntuacion",
           "hero.stat1Value": "Valoracion publica de Tripadvisor",
           "hero.stat2Label": "Ritmo de servicio",
           "hero.stat2Value": "De martes a domingo",
-          "hero.stat3Label": "Experiencia",
-          "hero.stat3Value": "Brunch, cocteles y momentos tasting",
           "proof.eyebrow": "Prueba social",
-          "proof.title": "Construido sobre confianza real de clientes, codigos de servicio elevados y posicionamiento de destino.",
-          "proof.lead": "La pagina ahora se siente como una marca de hospitalidad y no como una plantilla de resenas.",
+          "proof.title": "Hospitalidad luminosa, confianza real del cliente y una sensacion de destino desde el primer scroll.",
+          "proof.lead": "La pagina ahora se siente como una marca calida frente al mar en lugar de un concepto oscuro, manteniendo visibles las pruebas publicas.",
           "proof.card1Title": "Confianza desde Tripadvisor",
           "proof.card1Copy": "Resenas publicas reales, una puntuacion de 4.8 y la posicion Travellers' Choice sostienen la marca.",
           "proof.card2Title": "Llegada con Google Maps",
@@ -703,16 +803,16 @@
           "events.eyebrow": "Private dining y eventos",
           "events.title": "Pensado para birthdays, cenas privadas, mesas corporativas y celebraciones.",
           "events.lead": "La pagina ahora vende ocasiones, no solo visitas casuales.",
-          "reviews.eyebrow": "Edicion de resenas Tripadvisor",
-          "reviews.title": "Senales reales de opinion publica, reestilizadas dentro de una presentacion editorial mas premium.",
-          "reviews.lead": "Los titulos, fechas y origenes de los clientes proceden de material publico de Tripadvisor; el texto inferior esta resumido para claridad y presentacion.",
+          "reviews.eyebrow": "Resenas de clientes",
+          "reviews.title": "Elogios reales de Tripadvisor, presentados con una edicion mas calida y editorial.",
+          "reviews.lead": "Los titulos, fechas y datos del viajero proceden de material publico de Tripadvisor; los resumenes se han parafraseado para claridad y presentacion.",
           "reviews.cta": "Ver en Tripadvisor",
           "gallery.eyebrow": "Galeria",
-          "gallery.title": "Storytelling visual de alto nivel para comida, atmosfera y llegada.",
-          "gallery.lead": "La imageneria ahora se siente mas curada, cinematografica y orientada a conversion.",
+          "gallery.title": "Imagenes curadas de terraza, cocteles y brunch que mantienen viva la pagina.",
+          "gallery.lead": "La galeria ahora se siente mas luminosa, mas tropical y mas orientada a destino sin dejar de usar material visual real del restaurante.",
           "visit.eyebrow": "Ubicacion, llegada y contacto",
-          "visit.title": "Embed real de Google Maps, mejores claves de llegada y una seccion de ubicacion mas limpia.",
-          "visit.lead": "Esta parte ahora resulta creible y util, con contexto real del mapa y acciones directas.",
+          "visit.title": "Direcciones reales, contacto claro y una seccion de llegada que de verdad sirve.",
+          "visit.lead": "Mapa en vivo, acciones directas y horarios mas claros mantienen sencillo el paso de explorar a reservar.",
           "visit.addressLabel": "Direccion",
           "visit.arrivalLabel": "Llegada",
           "visit.arrival": "Llegada junto al paseo, aparcamiento cercano y acceso sencillo para clientes locales y de destino.",
@@ -729,8 +829,8 @@
           "visit.daySunday": "Domingo",
           "visit.closed": "Cerrado",
           "booking.eyebrow": "Reserva online",
-          "booking.title": "Reserva elegante, conversion rapida y opcion VIP integrada.",
-          "booking.lead": "El formulario sigue funcionando, pero ahora la presentacion se siente a la altura de un restaurante destino.",
+          "booking.title": "Reserva online calida, sencilla y pensada para la terraza.",
+          "booking.lead": "Elige fecha, hora y numero de comensales y envia tu solicitud directamente al sistema de reservas.",
           "booking.name": "Nombre",
           "booking.email": "Correo",
           "booking.phone": "Telefono",
@@ -738,51 +838,62 @@
           "booking.time": "Hora",
           "booking.guests": "Comensales",
           "booking.selectGuests": "Selecciona",
-          "booking.vip": "Solicitud de reserva VIP",
           "booking.notes": "Notas",
           "booking.submit": "Enviar reserva",
-          "booking.statusHint": "Las reservas se guardan en el backend y estan disponibles desde /api/bookings.",
+          "booking.statusHint": "Tu solicitud se envia al sistema de reservas y se responde lo antes posible.",
           "booking.loading": "Enviando reserva...",
           "booking.success": "Reserva recibida. Referencia: {reference}.",
           "booking.error": "No se pudo guardar la reserva. Intentalo de nuevo.",
-          "vip.eyebrow": "Membership premium",
-          "vip.title": "Club VIP para prioridad en reservas, eventos especiales y una hospitalidad de mayor nivel.",
-          "vip.lead": "Posiciona el restaurante como una marca a la que el cliente quiere seguir accediendo, no solo visitar una vez.",
-          "vip.point1": "Acceso prioritario a fines de semana de alta demanda y noches privadas",
-          "vip.point2": "Invitaciones a lanzamientos tasting, previews de cocteleria y experiencias anfitrionas",
-          "vip.point3": "Una razon mas fuerte para volver, recomendar y elevar la visita",
-          "vip.cta": "Solicitar acceso VIP",
-          "footer.sources": "La seccion de Tripadvisor usa titulos, fechas y contexto de valoracion publicos de la ficha de Club Del Mar. Google Maps esta integrado para contexto real de ubicacion."
+          "booking.sideEyebrow": "Celebraciones privadas",
+          "booking.sideTitle": "Para birthdays, grupos de brunch y mesas largas y luminosas junto al paseo.",
+          "booking.sideLead": "Club Del Mar debe sentirse como el lugar que eliges para la mesa mas bonita, el almuerzo mas lento y la reunion que se recuerda despues del fin de semana.",
+          "booking.sidePoint1": "Almuerzos de cumpleanos, cenas privadas y mesas de celebracion mas relajadas",
+          "booking.sidePoint2": "Seating frente al paseo, cocteles y una atmosfera tropical durante todo el dia",
+          "booking.sidePoint3": "Hospitalidad preparada para grupos sin perder el tono pulido",
+          "booking.sideCta": "Planear una reserva de grupo",
+          "footer.description": "Brunch frente al mar, cocteles y almuerzos largos pensados para tardes mas lentas en el paseo de Fuengirola.",
+          "footer.explore": "Explora",
+          "footer.about": "Sobre nosotros",
+          "footer.menu": "Menu",
+          "footer.gallery": "Galeria",
+          "footer.reviews": "Resenas",
+          "footer.findUs": "Encuentranos",
+          "footer.visitHeading": "Visita",
+          "footer.book": "Reservar",
+          "footer.sources": "Los titulos de Tripadvisor y los datos del viajero proceden de la ficha publica de Club Del Mar, mientras que Google Maps se integra para contexto real de ubicacion."
         },
         sv: {
-          "meta.title": "Club Del Mar | Lyxig dining",
-          "brand.tagline": "Lyxig dining vid havet, brunch och cocktails",
+          "meta.title": "Club Del Mar | Escape vid havet",
+          "brand.tagline": "Brunch vid havet, cocktails och terrasseftermiddagar",
           "nav.experience": "Upplevelsen",
           "nav.gallery": "Galleri",
           "nav.menu": "Meny",
           "nav.reviews": "Recensioner",
           "nav.visit": "Besok",
           "cta.book": "Boka bord",
-          "hero.kicker": "Michelin-inspirerad hospitality pa strandpromenaden i Fuengirola",
-          "hero.title": "Dar lyx moter smak",
-          "hero.lead": "Club Del Mar omtolkad som en riktig destination: cinematisk, elegant och byggd for att konvertera fran forsta intryck till bekrftad bokning.",
+          "hero.kicker": "Morgnar pa Fuengirolas promenad, terrassluncher och cocktails i solnedgangen",
+          "hero.title": "En ljusare medelhavsflykt vid havet",
+          "hero.locationLine": "Fuengirola · Costa del Sol",
+          "hero.script": "Brunch, cocktails och langa luncher langs promenaden",
+          "hero.lead": "Ett varmare, ljusare Club Del Mar med tropisk resortkansla, kuraterade bilder och en bokningsupplevelse som kanns enkel redan fran forsta klicket.",
           "hero.ctaPrimary": "Boka nu",
-          "hero.ctaSecondary": "Utforska menyerna",
+          "hero.ctaSecondary": "Se menyerna",
           "hero.award1": "Tripadvisor 4.8 / 24 recensioner",
           "hero.award2": "Travellers' Choice topp 10%",
           "hero.award3": "Paseo Maritimo Rey de Espana, 6",
-          "hero.sideKicker": "En oforglomlig diningupplevelse",
-          "hero.sideTitle": "Tillrackligt forfinad for destinationsmiddagar, tillrackligt avslappnad for langa luncher pa terrassen.",
-          "hero.sideLead": "Signaturbrunch, terrasscocktails, hogre serviceniva och ett havsnara lage som kanns mer som en ritual an ett stopp.",
+          "hero.slide1Kicker": "Terrasskansla",
+          "hero.slide1Title": "Uteservering, mjuka toner och energi fran promenaden",
+          "hero.slide2Kicker": "Signaturbrunch",
+          "hero.slide2Title": "Generosa frukostbrickor for lugnare morgnar",
+          "hero.slide3Kicker": "Golden hour",
+          "hero.slide3Title": "Cocktails, havsljus och en mer escapistisk overgang mot eftermiddagen",
           "hero.stat1Label": "Gastbetyg",
           "hero.stat1Value": "Publik Tripadvisor-bedomning",
           "hero.stat2Label": "Serveringsrytm",
           "hero.stat2Value": "Tisdag till sondag",
-          "hero.stat3Label": "Upplevelse",
-          "hero.stat3Value": "Brunch, cocktails och tasting-ogonblick",
           "proof.eyebrow": "Social proof",
-          "proof.title": "Byggd runt verkligt gastfortroende, mer exklusiva servicekoder och en tydligare destinationskansla.",
-          "proof.lead": "Sidan kanns nu mer som ett hospitality-varumarke an en recensionstemplate.",
+          "proof.title": "Solig hospitality, verkligt gastfortroende och en starkare destinationskansla redan fran forsta scrollen.",
+          "proof.lead": "Sidan kanns nu mer som ett varmt strandpromenadvarumarke an ett morkt koncept, samtidigt som de publika fortroendesignalerna finns kvar.",
           "proof.card1Title": "Tripadvisor-baserat fortroende",
           "proof.card1Copy": "Riktiga publika recensioner, ett betyg pa 4.8 och Travellers' Choice forankrar varumarket i gastbevis.",
           "proof.card2Title": "Ankomst via Google Maps",
@@ -807,16 +918,16 @@
           "events.eyebrow": "Private dining & events",
           "events.title": "Byggd for birthdays, privata middagar, foretagsbord och firanden.",
           "events.lead": "Sidan saljer nu tillfallen, inte bara spontana besok.",
-          "reviews.eyebrow": "Tripadvisor-redigering",
-          "reviews.title": "Riktiga publika recensionssignaler, omarbetade till en mer exklusiv editorial presentation.",
-          "reviews.lead": "Titlar, datum och gastursprung kommer fran publikt Tripadvisor-material; texten nedan ar sammanfattad for tydlighet och presentation.",
+          "reviews.eyebrow": "Gastrecensioner",
+          "reviews.title": "Riktig Tripadvisor-berom, presenterad med en varmare och mer redaktionell kansla.",
+          "reviews.lead": "Titlar, datum och gastdetaljer kommer fran publikt Tripadvisor-material; sammanfattningarna nedan ar parafraserade for tydlighet och presentation.",
           "reviews.cta": "Las pa Tripadvisor",
           "gallery.eyebrow": "Galleri",
-          "gallery.title": "Mer exklusiv visuell storytelling for mat, atmosfar och ankomst.",
-          "gallery.lead": "Bilderna kanns nu mer kuraterade, cinematiskta och konverteringsdrivna.",
+          "gallery.title": "Kuraterade bilder av terrass, cocktails och brunch som haller sidan levande.",
+          "gallery.lead": "Galleriet kanns nu ljusare, mer tropiskt och mer destinationsdrivet utan att sluta bygga pa restaurangens riktiga bilder.",
           "visit.eyebrow": "Plats, ankomst & kontakt",
-          "visit.title": "Riktig Google Maps-embed, starkare ankomstsignaler och en renare platssektion.",
-          "visit.lead": "Den har delen kanns nu trovrdig och anvandbar med riktig kartkontext och tydliga handlingar.",
+          "visit.title": "Riktiga vagningsanvisningar, tydlig kontakt och en ankomstsektion som faktiskt hjalper gasten.",
+          "visit.lead": "Levande kartkontext, rena kontaktvagar och tydligare oppettider gor steget fran inspiration till bokning enklare.",
           "visit.addressLabel": "Adress",
           "visit.arrivalLabel": "Ankomst",
           "visit.arrival": "Ankomst langs promenaden, parkering i narheten och enkel walk-up access for lokala och resande gaster.",
@@ -833,8 +944,8 @@
           "visit.daySunday": "Sondag",
           "visit.closed": "Stangt",
           "booking.eyebrow": "Onlinebokning",
-          "booking.title": "Elegant bokning, snabb konvertering och inbyggt VIP-val.",
-          "booking.lead": "Formularet fungerar fortfarande, men presentationen kanns nu vardig en riktig destinationsrestaurang.",
+          "booking.title": "Onlinebokning som kanns varm, enkel och terrassklar.",
+          "booking.lead": "Valj datum, tid och antal gaster och skicka din forfragan direkt till bokningssystemet.",
           "booking.name": "Namn",
           "booking.email": "E-post",
           "booking.phone": "Telefon",
@@ -842,21 +953,29 @@
           "booking.time": "Tid",
           "booking.guests": "Antal gaster",
           "booking.selectGuests": "Valj",
-          "booking.vip": "VIP-bokningsonskemal",
           "booking.notes": "Noteringar",
           "booking.submit": "Skicka bokning",
-          "booking.statusHint": "Bokningar sparas i backend och finns tillgangliga via /api/bookings.",
+          "booking.statusHint": "Din forfragan skickas till bokningssystemet och besvaras sa snart som mojligt.",
           "booking.loading": "Skickar bokning...",
           "booking.success": "Bokning mottagen. Referens: {reference}.",
           "booking.error": "Det gick inte att spara bokningen. Forsok igen.",
-          "vip.eyebrow": "Premium membership",
-          "vip.title": "VIP-klubb for prioriterade bokningar, specialevent och hospitality med hogre touch.",
-          "vip.lead": "Positionera restaurangen som ett varumarke gasten vill ha fortsatt tillgang till, inte bara boka en gang.",
-          "vip.point1": "Prioriterad tillgang till helger med hog efterfragan och privata kvallar",
-          "vip.point2": "Inbjudningar till tastinglanseringar, cocktail previews och hostade upplevelser",
-          "vip.point3": "En starkare anledning att komma tillbaka, rekommendera och uppgradera besoket",
-          "vip.cta": "Be om VIP-access",
-          "footer.sources": "Tripadvisor-sektionen anvander publika titlar, datum och betygskontext fran Club Del Mars Tripadvisor-listning. Google Maps ar inbaddad for riktig platskontext."
+          "booking.sideEyebrow": "Privata firanden",
+          "booking.sideTitle": "For fodelsedagar, brunchgrupper och langa, soliga bord langs promenaden.",
+          "booking.sideLead": "Club Del Mar ska fortfarande kannas som platsen man valjer for det finare bordet, den langre lunchen och sammankomsten som man pratar om efter helgen.",
+          "booking.sidePoint1": "Fodelsedagsluncher, privata middagar och avslappnade firandebord",
+          "booking.sidePoint2": "Sittplatser mot promenaden, cocktails och en tropisk helhetskansla hela dagen",
+          "booking.sidePoint3": "Gruppvanlig hospitality utan att tappa den polerade atmosfaren",
+          "booking.sideCta": "Planera en gruppbokning",
+          "footer.description": "Brunch vid havet, cocktails och langa luncher skapade for lugnare eftermiddagar langs strandpromenaden i Fuengirola.",
+          "footer.explore": "Utforska",
+          "footer.about": "Om oss",
+          "footer.menu": "Meny",
+          "footer.gallery": "Galleri",
+          "footer.reviews": "Recensioner",
+          "footer.findUs": "Hitta hit",
+          "footer.visitHeading": "Besok",
+          "footer.book": "Boka nu",
+          "footer.sources": "Tripadvisor-titlar och gastdetaljer kommer fran Club Del Mars publika listning, medan Google Maps ar inbaddad for riktig platskontext."
         }
       };
 
@@ -867,7 +986,12 @@
       const bookingStatus = document.querySelector("#booking-status");
       const bookingDateInput = document.querySelector("#booking-date");
       const revealNodes = document.querySelectorAll("[data-reveal]");
+      const heroSlider = document.querySelector("[data-slider]");
+      const heroSlides = heroSlider ? Array.from(heroSlider.querySelectorAll("[data-slide]")) : [];
+      const sliderDots = heroSlider ? Array.from(heroSlider.querySelectorAll("[data-slide-dot]")) : [];
       let activeLanguage = "en";
+      let activeSlideIndex = 0;
+      let sliderTimerId = null;
 
       function getLocalDateString() {
         const now = new Date();
@@ -951,6 +1075,63 @@
         revealNodes.forEach((node) => observer.observe(node));
       }
 
+      function showSlide(nextIndex) {
+        if (!heroSlides.length) return;
+
+        const safeIndex = ((nextIndex % heroSlides.length) + heroSlides.length) % heroSlides.length;
+        activeSlideIndex = safeIndex;
+
+        heroSlides.forEach((slide, index) => {
+          const isActive = index === safeIndex;
+          slide.classList.toggle("is-active", isActive);
+          slide.setAttribute("aria-hidden", String(!isActive));
+        });
+
+        sliderDots.forEach((dot, index) => {
+          const isActive = index === safeIndex;
+          dot.classList.toggle("is-active", isActive);
+          dot.setAttribute("aria-pressed", String(isActive));
+        });
+      }
+
+      function restartSlider() {
+        if (sliderTimerId) {
+          window.clearInterval(sliderTimerId);
+          sliderTimerId = null;
+        }
+
+        if (heroSlides.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          return;
+        }
+
+        sliderTimerId = window.setInterval(() => {
+          showSlide(activeSlideIndex + 1);
+        }, 5200);
+      }
+
+      function setupSlider() {
+        if (!heroSlider || !heroSlides.length) return;
+
+        showSlide(0);
+
+        sliderDots.forEach((dot) => {
+          dot.addEventListener("click", () => {
+            showSlide(Number(dot.dataset.slideDot || 0));
+            restartSlider();
+          });
+        });
+
+        heroSlider.addEventListener("mouseenter", () => {
+          if (sliderTimerId) {
+            window.clearInterval(sliderTimerId);
+            sliderTimerId = null;
+          }
+        });
+
+        heroSlider.addEventListener("mouseleave", restartSlider);
+        restartSlider();
+      }
+
       languageButtons.forEach((button) => {
         button.addEventListener("click", () => applyLanguage(button.dataset.lang));
       });
@@ -964,13 +1145,6 @@
           event.preventDefault();
 
           const formData = new FormData(bookingForm);
-          const vipRequested = formData.get("vip") === "on";
-          const noteFragments = [String(formData.get("notes") || "").trim()];
-
-          if (vipRequested) {
-            noteFragments.unshift("VIP reservation requested");
-          }
-
           const payload = {
             name: String(formData.get("name") || "").trim(),
             email: String(formData.get("email") || "").trim(),
@@ -978,7 +1152,7 @@
             date: String(formData.get("date") || "").trim(),
             time: String(formData.get("time") || "").trim(),
             guests: Number(formData.get("guests") || 0),
-            notes: noteFragments.filter(Boolean).join(" | "),
+            notes: String(formData.get("notes") || "").trim(),
             language: document.documentElement.lang || "en",
           };
 
@@ -1025,6 +1199,7 @@
       }
 
       setupReveal();
+      setupSlider();
       applyLanguage(getPreferredLanguage());
     </script>
   </body>
