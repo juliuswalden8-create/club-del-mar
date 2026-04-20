@@ -114,7 +114,6 @@ button {
   opacity: 0.8;
 }
 
-.site-header,
 .hero-section,
 .story-section,
 .menu-section,
@@ -130,7 +129,9 @@ button {
 
 .site-header {
   position: sticky;
-  top: 0;
+  top: 12px;
+  z-index: 120;
+  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(220px, 1fr) auto auto;
   align-items: center;
