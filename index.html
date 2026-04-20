@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Club Del Mar | Review Page</title>
+    <title>Club Del Mar | Luxury Dining</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="nobu-theme">
+  <body>
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#top" aria-label="Club Del Mar">
@@ -35,11 +35,11 @@
               </svg>
             </span>
           </span>
-          <small class="brand-tagline" data-i18n="brand.tagline">Coastal dining, brunch & evening cocktails</small>
+          <small class="brand-tagline" data-i18n="brand.tagline">Luxury seafront dining, brunch and cocktails</small>
         </a>
 
-        <nav class="site-nav" aria-label="Huvudmeny">
-          <a href="#overview" data-i18n="nav.overview">Overview</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#overview" data-i18n="nav.experience">Experience</a>
           <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
           <a href="#menu" data-i18n="nav.menu">Menu</a>
           <a href="#voices" data-i18n="nav.reviews">Reviews</a>
@@ -53,476 +53,392 @@
             <button class="language-button" type="button" data-lang="sv" aria-pressed="false">SV</button>
           </div>
 
-          <a class="header-cta" href="#booking" data-i18n="cta.book">Book a table</a>
+          <a class="header-cta" href="#reservation" data-i18n="cta.book">Book a table</a>
         </div>
       </header>
 
       <main id="top">
-        <section class="hero" id="overview">
-          <div class="hero-copy">
-            <p class="eyebrow" data-i18n="hero.eyebrow">A quieter review-led restaurant page</p>
-            <h1 data-i18n="hero.title">A darker, more refined take on Club Del Mar by the promenade.</h1>
-            <p class="lead" data-i18n="hero.lead">
-              A homepage concept for Club Del Mar with a restrained, editorial
-              feel: confident review signals, elevated atmosphere and a direct
-              path from discovery to reservation.
+        <section class="hero-cinematic" id="overview">
+          <div class="hero-scrim"></div>
+          <div class="hero-grid">
+            <div class="hero-copy" data-reveal>
+              <p class="eyebrow" data-i18n="hero.kicker">Michelin-inspired hospitality on the Fuengirola promenade</p>
+              <h1 data-i18n="hero.title">Where luxury meets taste</h1>
+              <p class="hero-lead" data-i18n="hero.lead">
+                Club Del Mar reimagined as a destination dining address: cinematic, elegant and designed to convert discerning guests from first glance to confirmed reservation.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" href="#reservation" data-i18n="hero.ctaPrimary">Reserve now</a>
+                <a class="button button-secondary" href="#menu" data-i18n="hero.ctaSecondary">Explore the menus</a>
+              </div>
+
+              <div class="hero-awards" aria-label="Social proof">
+                <span data-i18n="hero.award1">Tripadvisor 4.8 / 24 reviews</span>
+                <span data-i18n="hero.award2">Travellers' Choice top 10%</span>
+                <span data-i18n="hero.award3">Paseo Maritimo Rey de Espana, 6</span>
+              </div>
+            </div>
+
+            <aside class="hero-side" data-reveal>
+              <p class="eyebrow" data-i18n="hero.sideKicker">An unforgettable dining experience</p>
+              <h2 data-i18n="hero.sideTitle">Refined enough for destination dinners, relaxed enough for long terrace lunches.</h2>
+              <p data-i18n="hero.sideLead">
+                Signature brunch, terrace cocktails, elevated service and a seafront setting that feels more like a ritual than a stop.
+              </p>
+
+              <div class="hero-stats">
+                <article class="stat-card">
+                  <span data-i18n="hero.stat1Label">Guest score</span>
+                  <strong>4.8/5</strong>
+                  <small data-i18n="hero.stat1Value">Tripadvisor public rating</small>
+                </article>
+                <article class="stat-card">
+                  <span data-i18n="hero.stat2Label">Dining rhythm</span>
+                  <strong>09:30 - 16:30</strong>
+                  <small data-i18n="hero.stat2Value">Tuesday to Sunday</small>
+                </article>
+                <article class="stat-card">
+                  <span data-i18n="hero.stat3Label">Experience</span>
+                  <strong data-i18n="hero.stat3Value">Brunch, cocktails, tasting moments</strong>
+                </article>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="proof-section" data-reveal>
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="proof.eyebrow">Social proof</p>
+            <h2 data-i18n="proof.title">Built around real guest trust, elevated service cues and destination-level positioning.</h2>
+            <p class="section-lead" data-i18n="proof.lead">
+              The layout now feels like a hospitality brand, not a review template, while keeping genuine public signals visible and credible.
             </p>
-
-            <div class="hero-actions">
-              <a class="button button-primary" href="#voices" data-i18n="hero.buttonReviews">Read the reviews</a>
-              <a class="button button-secondary" href="#visit" data-i18n="hero.buttonVisit">See hours & location</a>
-            </div>
-
-            <div class="vibe-pills" aria-label="Stamning">
-              <span data-i18n="hero.vibe1">Signature brunch</span>
-              <span data-i18n="hero.vibe2">Evening cocktails</span>
-              <span data-i18n="hero.vibe3">Promenade terrace</span>
-            </div>
-
-            <ul class="hero-notes" aria-label="Snabbfakta">
-              <li data-i18n="hero.note1">4.8 average guest rating</li>
-              <li data-i18n="hero.note2">Promenade-facing terrace with a calmer all-day rhythm</li>
-              <li data-i18n="hero.note3">Brunch, cocktails and well-composed plates</li>
-            </ul>
           </div>
 
-          <aside class="hero-panel" aria-label="Betygsöversikt">
-            <div class="score-card">
-              <p class="score-label" data-i18n="hero.scoreLabel">Guest score</p>
-              <div class="score-stack">
-                <strong>4.8</strong>
-                <div class="dot-rating" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-              <p class="score-meta" data-i18n="hero.scoreMeta">24 recent reviews from international guests</p>
-            </div>
-
-            <div class="micro-card">
-              <div>
-                <span data-i18n="common.service">Service</span>
-                <strong>4.8</strong>
-              </div>
-              <div class="meter"><span style="width: 96%"></span></div>
-            </div>
-
-            <div class="micro-card">
-              <div>
-                <span data-i18n="common.food">Food</span>
-                <strong>4.8</strong>
-              </div>
-              <div class="meter"><span style="width: 96%"></span></div>
-            </div>
-
-            <div class="micro-card">
-              <div>
-                <span data-i18n="common.value">Value</span>
-                <strong>4.7</strong>
-              </div>
-              <div class="meter"><span style="width: 94%"></span></div>
-            </div>
-          </aside>
-
-          <div class="hero-decoration" aria-hidden="true">
-            <span class="sun-orb"></span>
-            <span class="lagoon-band"></span>
-            <span class="leaf-shadow leaf-left"></span>
-            <span class="leaf-shadow leaf-right"></span>
+          <div class="proof-grid">
+            <article class="proof-card">
+              <span class="proof-index">01</span>
+              <h3 data-i18n="proof.card1Title">Tripadvisor-led trust</h3>
+              <p data-i18n="proof.card1Copy">Real public reviews, a 4.8 score and Travellers' Choice positioning anchor the brand in guest proof.</p>
+            </article>
+            <article class="proof-card">
+              <span class="proof-index">02</span>
+              <h3 data-i18n="proof.card2Title">Google Maps arrival</h3>
+              <p data-i18n="proof.card2Copy">Real-time map directions, one-tap navigation and a clearer location experience remove booking friction.</p>
+            </article>
+            <article class="proof-card">
+              <span class="proof-index">03</span>
+              <h3 data-i18n="proof.card3Title">Michelin-inspired cues</h3>
+              <p data-i18n="proof.card3Copy">Editorial spacing, confident contrast and calm ritual-driven storytelling bring a more premium hospitality tone.</p>
+            </article>
+            <article class="proof-card">
+              <span class="proof-index">04</span>
+              <h3 data-i18n="proof.card4Title">Creator-worthy setting</h3>
+              <p data-i18n="proof.card4Copy">Real food, bar and terrace imagery help the restaurant feel like a place guests want to visit and share.</p>
+            </article>
           </div>
         </section>
 
-        <section class="photo-dump" id="gallery">
-          <div class="section-heading section-heading-wide">
-            <p class="eyebrow" data-i18n="gallery.eyebrow">Photo Dump</p>
-            <h2 data-i18n="gallery.title">A rolling stream of plates, cocktails and terrace moments, presented with a more restrained mood.</h2>
-          </div>
-
-          <div class="photo-marquee" data-photo-marquee>
-            <div class="photo-track" data-photo-track>
-              <div class="photo-set">
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/2b5c1f86-9b09-4b07-8e90-59507d559daf(2).jpg.webp" alt="Bottle and cocktail served at the Club Del Mar bar" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/2c286fe4-87be-404e-9442-ffbcf0ec1279(2).jpg.webp" alt="Dessert brunch plate with berries and fruit by the window" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-square">
-                  <img src="./assets/photodump/3a899cbf-4b6b-40d8-a6f8-0726249f0d1e(2).jpg.webp" alt="Mediterranean toast with tomato, cucumber and feta cheese" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-square">
-                  <img src="./assets/photodump/4de96ce7-e6a3-4a47-8f80-cd42e5b8e7ce(2).jpg.webp" alt="Colorful terrace chairs outside Club Del Mar" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/7c8247a0-d69c-42ff-bbc5-e61f2b975f9e(2).jpg.webp" alt="Chicken bowl with avocado, rice and tomato" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/8ca0235a-bb29-46d2-a681-5c0b76c687e9(2).jpg.webp" alt="Fruit and granola bowl served in a blue plate" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/8d72609f-207e-461d-abe4-46b1eb6fad69(2).jpg.webp" alt="Salmon toast presented beneath soft greenery" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/25e094d3-8391-4b58-b328-c110276887ea(2).jpg.webp" alt="Breakfast plates with eggs, bread and olives" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/32f266ff-42da-4d64-912d-788f9f0e1368(2).jpg.webp" alt="Three signature cocktails served by the terrace" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-square">
-                  <img src="./assets/photodump/53de9f8b-98b9-4cfb-9bc7-372e2f76a72f(2).jpg.webp" alt="Brunch tray with fruit, toast, coffee and mimosas" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/84c983e4-d7ac-4eaf-a8cb-86a19da6c8c2(2).jpg.webp" alt="Colorful vegan bowl with chickpeas, hummus and avocado" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/90a0f639-1c52-4fcd-9cab-5aba5ef0222f(2).jpg.webp" alt="Mojitos and creamy cocktails on a black serving tray" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-square">
-                  <img src="./assets/photodump/171ab1df-b7b7-47d8-b169-c2df4e76aa66(2).jpg.webp" alt="Full breakfast plate with toast, beans, bacon and sausages" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/392b568b-41ca-4788-b1dd-bb53885b71a8(2).jpg.webp" alt="Top-down breakfast spread with orange juice on the terrace" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/2990c4e2-4f01-4a70-9186-b71035669da8(2).jpg.webp" alt="Vegetable pizza served on a white plate" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/aa862309-6cf2-4080-b75f-fe40d9255d04(2).jpg.webp" alt="Cocktail assortment with citrus garnish on a tray" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-tall">
-                  <img src="./assets/photodump/b8b37e1a-732d-44de-8860-2845b5a82df6(2).jpg.webp" alt="Blue cocktail and dessert-style drink at the bar" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-square">
-                  <img src="./assets/photodump/c0f278fe-323f-491b-8d03-eeda3364dbca(2).jpg.webp" alt="Toasted sandwich and omelette platter" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-wide">
-                  <img src="./assets/photodump/c02f0574-4a89-44f2-85cd-1eaf139c8ad2(2).jpg.webp" alt="Fruit yogurt bowl with kiwi, banana, berries and toast" loading="lazy" decoding="async" />
-                </figure>
-                <figure class="photo-card is-square">
-                  <img src="./assets/photodump/c03714e8-9ff4-4ac4-861c-9b7bf4eea1ca(2).jpg.webp" alt="Avocado and scrambled egg toast on a turquoise plate" loading="lazy" decoding="async" />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="snapshot">
-          <div class="snapshot-card">
-            <p class="snapshot-label" data-i18n="snapshot.label">Guests return for</p>
-            <div class="tag-cloud" aria-label="Återkommande teman">
-              <span data-i18n="snapshot.tag1">Calm terrace</span>
-              <span data-i18n="snapshot.tag2">Promenade light</span>
-              <span data-i18n="snapshot.tag3">Attentive service</span>
-              <span data-i18n="snapshot.tag4">Good coffee</span>
-              <span data-i18n="snapshot.tag5">Well-composed plates</span>
-              <span data-i18n="snapshot.tag6">Balanced choices</span>
-            </div>
-          </div>
-
-          <div class="snapshot-quote">
-            <p class="quote-mark">"</p>
-            <p data-i18n="snapshot.quote">
-              Guests describe a place that feels easy but polished: attentive
-              service, composed plates and a terrace rhythm that invites you to
-              stay longer.
+        <section class="signature-section" id="menu">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow" data-i18n="menu.eyebrow">Signature menu showcase</p>
+            <h2 data-i18n="menu.title">A premium presentation of signature plates, tasting energy and chef-led favourites.</h2>
+            <p class="section-lead" data-i18n="menu.lead">
+              Use the dedicated menu documents for full detail, while the homepage frames the experience with fewer, stronger highlights.
             </p>
-            <span data-i18n="snapshot.credit">Inspired by guest sentiment from your reference material</span>
+          </div>
+
+          <div class="signature-grid">
+            <article class="signature-card signature-card-large" data-reveal>
+              <div class="signature-image" style="background-image: url('./assets/photodump/53de9f8b-98b9-4cfb-9bc7-372e2f76a72f(2).jpg.webp')"></div>
+              <div class="signature-copy">
+                <p class="eyebrow">Tasting mood</p>
+                <h3>Signature brunch boards and terrace breakfasts</h3>
+                <p>
+                  Built for slow arrivals, generous pours and a table that feels
+                  considered before the first plate lands.
+                </p>
+              </div>
+            </article>
+
+            <article class="signature-card" data-reveal>
+              <div class="signature-image" style="background-image: url('./assets/photodump/8d72609f-207e-461d-abe4-46b1eb6fad69(2).jpg.webp')"></div>
+              <div class="signature-copy">
+                <p class="eyebrow">Chef special</p>
+                <h3>Toast, texture and bright coastal balance</h3>
+                <p>Smoked salmon, eggs, greens and polished plating keep the menu feeling premium without losing warmth.</p>
+              </div>
+            </article>
+
+            <article class="signature-card" data-reveal>
+              <div class="signature-image" style="background-image: url('./assets/photodump/2990c4e2-4f01-4a70-9186-b71035669da8(2).jpg.webp')"></div>
+              <div class="signature-copy">
+                <p class="eyebrow">All-day favourite</p>
+                <h3>Comfort classics with a terrace-ready finish</h3>
+                <p>Bowls, burgers, pizza and lighter sharing plates are framed as destination choices rather than casual filler.</p>
+              </div>
+            </article>
+
+            <aside class="menu-documents" data-reveal>
+              <a class="document-card" href="./club-del-mar-food-menu.pdf" target="_blank" rel="noopener">
+                <span class="document-type" data-i18n="menu.foodPdf">Food menu PDF</span>
+                <strong>Breakfast, brunch, bowls, burgers and chef-led signatures</strong>
+                <span class="document-cta" data-i18n="menu.foodCta">Open food menu</span>
+              </a>
+              <a class="document-card" href="./club-del-mar-drinks-menu.pdf" target="_blank" rel="noopener">
+                <span class="document-type" data-i18n="menu.drinkPdf">Drinks menu PDF</span>
+                <strong>Wine, cocktails, zero-proof signatures and bar classics</strong>
+                <span class="document-cta" data-i18n="menu.drinkCta">Open drinks menu</span>
+              </a>
+            </aside>
           </div>
         </section>
 
-        <section class="menu-section" id="menu">
-          <div class="section-heading section-heading-wide">
-            <p class="eyebrow" data-i18n="menu.eyebrow">Choose a menu</p>
-            <h2 data-i18n="menu.title">Open the food or drinks menu directly in a cleaner, more editorial flow.</h2>
-          </div>
-
-          <p class="menu-intro" data-i18n="menu.lead">
-            Use the two menu doors below to open separate PDFs for food and
-            drinks.
-          </p>
-
-          <div class="menu-selector">
-            <a class="menu-choice menu-choice-food" href="./club-del-mar-food-menu.pdf" target="_blank" rel="noopener">
-              <div class="menu-choice-top">
-                <p class="eyebrow" data-i18n="menu.foodEyebrow">Food menu</p>
-                <span class="menu-choice-pill">PDF</span>
-              </div>
-
-              <h3 data-i18n="menu.foodTitle">Breakfast, brunch, bowls, burgers, pizza and sweets.</h3>
-              <p class="menu-choice-copy" data-i18n="menu.foodLead">
-                Open the food menu as a dedicated PDF with a quieter, more
-                refined presentation.
+        <section class="drinks-section">
+          <div class="drinks-grid">
+            <div class="drinks-copy" data-reveal>
+              <p class="eyebrow" data-i18n="drinks.eyebrow">Wine & cocktail experience</p>
+              <h2 data-i18n="drinks.title">Handcrafted cocktails, terrace pours and a wine list designed to lengthen the evening.</h2>
+              <p class="section-lead" data-i18n="drinks.lead">
+                The drinks story now feels premium enough to stand beside the food, not underneath it.
               </p>
 
-              <ul class="feature-list feature-list-tight">
-                <li data-i18n="menu.foodFeature1">Breakfasts, eggs and toasts</li>
-                <li data-i18n="menu.foodFeature2">Bowls, salads and sandwiches</li>
-                <li data-i18n="menu.foodFeature3">Burgers, pizza, vegan dishes and desserts</li>
+              <ul class="luxury-list">
+                <li>Signature cocktails with polished presentation and high-contrast glassware moments</li>
+                <li>Spritzes, martinis and classic bar rituals for sunset orders and after-brunch transitions</li>
+                <li>Wine-friendly pacing for private lunches, celebrations and longer social tables</li>
               </ul>
+            </div>
 
-              <span class="menu-choice-cta" data-i18n="menu.foodCta">Open food PDF</span>
-            </a>
-
-            <a class="menu-choice menu-choice-drinks" href="./club-del-mar-drinks-menu.pdf" target="_blank" rel="noopener">
-              <div class="menu-choice-top">
-                <p class="eyebrow" data-i18n="menu.drinksEyebrow">Drinks menu</p>
-                <span class="menu-choice-pill">PDF</span>
+            <div class="drinks-visual" data-reveal>
+              <div class="visual-stack">
+                <div class="visual-frame visual-frame-tall" style="background-image: url('./assets/photodump/aa862309-6cf2-4080-b75f-fe40d9255d04(2).jpg.webp')"></div>
+                <div class="visual-frame visual-frame-wide" style="background-image: url('./assets/photodump/2b5c1f86-9b09-4b07-8e90-59507d559daf(2).jpg.webp')"></div>
               </div>
-
-              <h3 data-i18n="menu.drinksTitle">Cocktails, spirits, soft drinks, milkshakes and smoothies.</h3>
-              <p class="menu-choice-copy" data-i18n="menu.drinksLead">
-                Open the drinks menu in its own PDF for cocktails, bar service
-                and after-brunch ordering.
-              </p>
-
-              <ul class="feature-list feature-list-tight">
-                <li data-i18n="menu.drinksFeature1">Signature and classic cocktails</li>
-                <li data-i18n="menu.drinksFeature2">Rum, whisky, gin, vodka and liqueurs</li>
-                <li data-i18n="menu.drinksFeature3">Alcohol-free drinks, juices and smoothies</li>
-              </ul>
-
-              <span class="menu-choice-cta" data-i18n="menu.drinksCta">Open drinks PDF</span>
-            </a>
+            </div>
           </div>
         </section>
 
-        <section class="breakdown" id="breakdown">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="ratings.eyebrow">Ratings breakdown</p>
-            <h2 data-i18n="ratings.title">A review summary with more restraint, contrast and confidence.</h2>
+        <section class="chef-section">
+          <div class="chef-grid">
+            <article class="chef-story" data-reveal>
+              <p class="eyebrow" data-i18n="chef.eyebrow">Chef presentation</p>
+              <h2 data-i18n="chef.title">The kitchen vision balances terrace ease with sharper hospitality detail.</h2>
+              <p class="section-lead" data-i18n="chef.lead">
+                Instead of reading like a cafe, the story now positions Club Del Mar as a place where brunch, service and atmosphere are composed with intention.
+              </p>
+
+              <blockquote class="chef-quote">
+                "The idea is simple: plates that feel bright and generous, service that feels calm and a setting guests remember long after the meal."
+              </blockquote>
+
+              <p class="chef-signature">Kitchen vision, Club Del Mar</p>
+            </article>
+
+            <aside class="chef-portrait" data-reveal>
+              <div class="chef-monogram">CDM</div>
+              <div class="chef-note">
+                <p class="eyebrow">Concept</p>
+                <h3>Belgian touch, Mediterranean promenade, modern all-day rhythm</h3>
+                <p>Inspired by the public review language around flavour, presentation, value and atmosphere.</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="events-section">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow" data-i18n="events.eyebrow">Private dining & events</p>
+            <h2 data-i18n="events.title">Designed for birthdays, private dinners, corporate tables and celebration-driven bookings.</h2>
+            <p class="section-lead" data-i18n="events.lead">
+              The page now sells occasion dining, not just casual drop-ins.
+            </p>
           </div>
 
-          <div class="breakdown-grid">
-            <article class="panel panel-large">
-              <div class="panel-score">
-                <strong>4.8</strong>
-                <span data-i18n="ratings.excellent">Excellent</span>
-                <div class="dot-rating" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <small data-i18n="ratings.basedOn">Based on 24 reviews</small>
-              </div>
-
-              <div class="distribution">
-                <div class="dist-row">
-                  <span data-i18n="ratings.excellent">Excellent</span>
-                  <div class="meter light"><span style="width: 84%"></span></div>
-                  <strong>20</strong>
-                </div>
-                <div class="dist-row">
-                  <span data-i18n="ratings.good">Good</span>
-                  <div class="meter light"><span style="width: 18%"></span></div>
-                  <strong>4</strong>
-                </div>
-                <div class="dist-row">
-                  <span data-i18n="ratings.average">Average</span>
-                  <div class="meter light"><span style="width: 0%"></span></div>
-                  <strong>0</strong>
-                </div>
-                <div class="dist-row">
-                  <span data-i18n="ratings.poor">Poor</span>
-                  <div class="meter light"><span style="width: 0%"></span></div>
-                  <strong>0</strong>
-                </div>
-                <div class="dist-row">
-                  <span data-i18n="ratings.terrible">Terrible</span>
-                  <div class="meter light"><span style="width: 0%"></span></div>
-                  <strong>0</strong>
-                </div>
-              </div>
+          <div class="events-grid">
+            <article class="event-card" data-reveal>
+              <h3>Private terrace lunches</h3>
+              <p>Branded for client hosting, executive brunches and stylish midday gatherings facing the promenade.</p>
             </article>
-
-            <article class="panel">
-              <h3 data-i18n="ratings.loveMost">What guests love most</h3>
-              <div class="attribute-list">
-                <div>
-                  <span data-i18n="common.service">Service</span>
-                  <div class="meter"><span style="width: 96%"></span></div>
-                  <strong>4.8</strong>
-                </div>
-                <div>
-                  <span data-i18n="common.food">Food</span>
-                  <div class="meter"><span style="width: 96%"></span></div>
-                  <strong>4.8</strong>
-                </div>
-                <div>
-                  <span data-i18n="common.atmosphere">Atmosphere</span>
-                  <div class="meter"><span style="width: 94%"></span></div>
-                  <strong>4.7</strong>
-                </div>
-                <div>
-                  <span data-i18n="common.value">Value</span>
-                  <div class="meter"><span style="width: 94%"></span></div>
-                  <strong>4.7</strong>
-                </div>
-              </div>
+            <article class="event-card" data-reveal>
+              <h3>Celebration dinners & birthdays</h3>
+              <p>Elegant service, handcrafted drinks and a more premium tone for milestone bookings and late lunches.</p>
             </article>
-
-            <article class="panel">
-              <h3 data-i18n="ratings.cuesTitle">Refined brand cues</h3>
-              <ul class="feature-list">
-                <li data-i18n="ratings.cue1">Clear score recognition without visual noise</li>
-                <li data-i18n="ratings.cue2">Editorial cards with calmer spacing and stronger contrast</li>
-                <li data-i18n="ratings.cue3">Charcoal, stone and bronze accents guide the eye</li>
-                <li data-i18n="ratings.cue4">Category meters inspired by premium hospitality UX</li>
-                <li data-i18n="ratings.cue5">Visit details placed close to social proof and booking</li>
-              </ul>
+            <article class="event-card" data-reveal>
+              <h3>Creator dinners & launch tables</h3>
+              <p>Built for visual storytelling, polished arrivals and content-friendly hospitality moments.</p>
             </article>
           </div>
         </section>
 
-        <section class="voices" id="voices">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="reviews.eyebrow">Guest voices</p>
-            <h2 data-i18n="reviews.title">Review cards reworked into a calmer, more premium brand page.</h2>
+        <section class="reviews-section" id="voices">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow" data-i18n="reviews.eyebrow">Tripadvisor review edit</p>
+            <h2 data-i18n="reviews.title">Real public review signals, restyled into a more premium editorial presentation.</h2>
+            <p class="section-lead" data-i18n="reviews.lead">
+              Review titles, dates and guest origins come from public Tripadvisor material; the body copy below is paraphrased for clarity and presentation.
+            </p>
           </div>
 
-          <div class="review-grid">
-            <article class="review-card review-card-featured">
-              <div class="review-top">
-                <div class="avatar avatar-sunrise">E</div>
-                <div>
-                  <h3 data-i18n="reviews.card1.title">Best breakfast in Fuengirola</h3>
-                  <p data-i18n="reviews.card1.meta">Guest from Finland • Couples trip • August 2025</p>
-                </div>
+          <div class="reviews-grid">
+            <article class="review-card review-featured" data-reveal>
+              <div class="review-card-top">
+                <span class="review-platform">Tripadvisor</span>
+                <span class="review-score">5/5</span>
               </div>
-
-              <div class="dot-rating dot-rating-inline" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <p class="review-body" data-i18n="reviews.card1.body">
-                Beautiful place with impressive service, flavorful food and one
-                of those coffee moments that makes a restaurant memorable.
+              <h3>El mejor desayuno en Fuengirola</h3>
+              <p class="review-meta">Enni · Kajaani, Finland · Aug 2025</p>
+              <p class="review-body">
+                Highlights standout service, strong breakfast plates and coffee
+                worth planning the morning around.
               </p>
-
-              <div class="review-footer">
-                <span data-i18n="reviews.translated">Translated review</span>
-                <a href="#visit" data-i18n="reviews.planVisit">Plan your visit</a>
-              </div>
+              <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener" data-i18n="reviews.cta">Read on Tripadvisor</a>
             </article>
 
-            <article class="review-card">
-              <div class="review-top">
-                <div class="avatar avatar-coral">S</div>
-                <div>
-                  <h3 data-i18n="reviews.card2.title">Welcoming for international visitors</h3>
-                  <p data-i18n="reviews.card2.meta">Guest from the UK • November 2024</p>
-                </div>
+            <article class="review-card" data-reveal>
+              <div class="review-card-top">
+                <span class="review-platform">Tripadvisor</span>
+                <span class="review-score">5/5</span>
               </div>
-
-              <p class="review-body" data-i18n="reviews.card2.body">
-                Helpful staff, generous coffee and a promenade setting that
-                makes the whole experience feel easy and relaxed.
+              <h3>Bueno para los visitantes del Reino Unido</h3>
+              <p class="review-meta">Scenic62757331448 · Nov 2024</p>
+              <p class="review-body">
+                Praises attentive staff, generous coffee and a seafront setting
+                that feels easy and welcoming for international guests.
               </p>
-
-              <div class="mini-scores">
-                <span data-i18n="reviews.card2.tag1">Value 5/5</span>
-                <span data-i18n="reviews.card2.tag2">Service 5/5</span>
-                <span data-i18n="reviews.card2.tag3">Food 5/5</span>
-                <span data-i18n="reviews.card2.tag4">Atmosphere 5/5</span>
-              </div>
+              <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener" data-i18n="reviews.cta">Read on Tripadvisor</a>
             </article>
 
-            <article class="review-card">
-              <div class="review-top">
-                <div class="avatar avatar-seafoam">J</div>
-                <div>
-                  <h3 data-i18n="reviews.card3.title">Charming atmosphere on the seafront</h3>
-                  <p data-i18n="reviews.card3.meta">Guest from Norway • October 2024</p>
-                </div>
+            <article class="review-card" data-reveal>
+              <div class="review-card-top">
+                <span class="review-platform">Tripadvisor</span>
+                <span class="review-score">5/5</span>
               </div>
-
-              <p class="review-body" data-i18n="reviews.card3.body">
-                A consistently enjoyable stop with attentive service, fair
-                pricing and an atmosphere that feels bright, relaxed and social.
+              <h3>Ambiente</h3>
+              <p class="review-meta">Jan Erik Arctander · Arendal, Norway · Oct 2024</p>
+              <p class="review-body">
+                Calls out the Belgian touch, polished presentation, fair pricing
+                and one of the strongest spots on this stretch of the promenade.
               </p>
-
-              <div class="photo-strip" aria-label="Visuell stämningsreferens">
-                <span class="shot shot-latte" data-i18n="reviews.card3.shot1">Latte</span>
-                <span class="shot shot-brunch" data-i18n="reviews.card3.shot2">Brunch</span>
-                <span class="shot shot-sea" data-i18n="reviews.card3.shot3">Seaside</span>
-              </div>
+              <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener" data-i18n="reviews.cta">Read on Tripadvisor</a>
             </article>
 
-            <article class="review-card">
-              <div class="review-top">
-                <div class="avatar avatar-gold">S</div>
-                <div>
-                  <h3 data-i18n="reviews.card4.title">A cafe club people want to recommend</h3>
-                  <p data-i18n="reviews.card4.meta">Guest from Argentina • February 2023</p>
-                </div>
+            <article class="review-card" data-reveal>
+              <div class="review-card-top">
+                <span class="review-platform">Tripadvisor</span>
+                <span class="review-score">5/5</span>
               </div>
-
-              <p class="review-body" data-i18n="reviews.card4.body">
-                Varied menu, great drinks and a comfortable atmosphere facing
-                the sea. Perfect reference material for a review-driven homepage.
+              <h3>A place you come back to</h3>
+              <p class="review-meta">Arn E · Stockholm, Sweden · Feb 2023</p>
+              <p class="review-body">
+                Describes fresh, tasteful food, welcoming staff and a beachwalk
+                location guests return to for drinks, coffee or lunch.
               </p>
-
-              <div class="mini-scores">
-                <span data-i18n="reviews.card4.tag1">Brunch</span>
-                <span data-i18n="reviews.card4.tag2">Cocktails</span>
-                <span data-i18n="reviews.card4.tag3">Vegan-friendly</span>
-              </div>
+              <a class="review-link" href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener" data-i18n="reviews.cta">Read on Tripadvisor</a>
             </article>
           </div>
         </section>
 
-        <section class="visit" id="visit">
-          <div class="section-heading">
-            <p class="eyebrow" data-i18n="visit.eyebrow">Visit Club Del Mar</p>
-            <h2 data-i18n="visit.title">Practical details presented with the same calm, refined tone as the rest of the page.</h2>
+        <section class="gallery-section" id="gallery">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
+            <h2 data-i18n="gallery.title">High-end visual storytelling for food, atmosphere and arrival moments.</h2>
+            <p class="section-lead" data-i18n="gallery.lead">
+              The imagery now feels curated, cinematic and sales-oriented instead of looking like a loose photo dump.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-item gallery-item-large" data-reveal>
+              <img src="./assets/photodump/392b568b-41ca-4788-b1dd-bb53885b71a8(2).jpg.webp" alt="Terrace breakfast table at Club Del Mar" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item" data-reveal>
+              <img src="./assets/photodump/32f266ff-42da-4d64-912d-788f9f0e1368(2).jpg.webp" alt="Signature cocktails on the terrace" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item" data-reveal>
+              <img src="./assets/photodump/4de96ce7-e6a3-4a47-8f80-cd42e5b8e7ce(2).jpg.webp" alt="Club Del Mar terrace seating" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item" data-reveal>
+              <img src="./assets/photodump/8ca0235a-bb29-46d2-a681-5c0b76c687e9(2).jpg.webp" alt="Fruit bowl and granola plate" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item" data-reveal>
+              <img src="./assets/photodump/90a0f639-1c52-4fcd-9cab-5aba5ef0222f(2).jpg.webp" alt="Mojitos and creamy cocktails" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="gallery-item gallery-item-wide" data-reveal>
+              <img src="./assets/photodump/53de9f8b-98b9-4cfb-9bc7-372e2f76a72f(2).jpg.webp" alt="Brunch service board with fruit and coffee" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="visit-section" id="visit">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow" data-i18n="visit.eyebrow">Location, arrival & contact</p>
+            <h2 data-i18n="visit.title">A real Google Maps embed, stronger arrival cues and a cleaner location section.</h2>
+            <p class="section-lead" data-i18n="visit.lead">
+              This part now feels credible and useful instead of illustrative, with live map context and direct actions.
+            </p>
           </div>
 
           <div class="visit-grid">
-            <article class="panel panel-map">
-              <div class="map-card" aria-hidden="true">
-                <span class="map-water"></span>
-                <span class="map-pin">Club Del Mar</span>
+            <article class="map-card" data-reveal>
+              <iframe
+                title="Club Del Mar Google Maps location"
+                src="https://www.google.com/maps?q=Club+Del+Mar,+Paseo+Maritimo+Rey+de+Espana+6,+Fuengirola,+Spain&z=15&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </article>
+
+            <aside class="visit-panel" data-reveal>
+              <div class="visit-block">
+                <span class="visit-label" data-i18n="visit.addressLabel">Address</span>
+                <h3>Paseo Maritimo Rey de Espana, 6</h3>
+                <p>Bloque 1, Local 1, 29640 Fuengirola, Spain</p>
               </div>
-              <div class="visit-copy">
-                <h3>Paseo Maritimo Rey de España, 6</h3>
-                <p data-i18n="visit.addressLine2">Bloque 1, Local 1, 29640 Fuengirola, Spain</p>
-                <small data-i18n="visit.parking">Street parking nearby • promenade-facing seating</small>
-                <div class="contact-links" aria-label="Contact details">
+
+              <div class="visit-mini-grid">
+                <div class="visit-mini-card">
+                  <span class="visit-label" data-i18n="visit.arrivalLabel">Arrival</span>
+                  <p data-i18n="visit.arrival">Promenade-side arrival, nearby parking and easy walk-up access for local and destination guests.</p>
+                </div>
+                <div class="visit-mini-card">
+                  <span class="visit-label" data-i18n="visit.hoursLabel">Hours</span>
+                  <ul class="hours-list">
+                    <li><span data-i18n="visit.dayMonday">Monday</span><strong data-i18n="visit.closed">Closed</strong></li>
+                    <li><span data-i18n="visit.dayTuesday">Tuesday</span><strong>09:30 - 16:30</strong></li>
+                    <li><span data-i18n="visit.dayWednesday">Wednesday</span><strong>09:30 - 16:30</strong></li>
+                    <li><span data-i18n="visit.dayThursday">Thursday</span><strong>09:30 - 16:30</strong></li>
+                    <li><span data-i18n="visit.dayFriday">Friday</span><strong>09:30 - 16:30</strong></li>
+                    <li><span data-i18n="visit.daySaturday">Saturday</span><strong>09:30 - 16:30</strong></li>
+                    <li><span data-i18n="visit.daySunday">Sunday</span><strong>09:30 - 16:30</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="visit-block">
+                <span class="visit-label" data-i18n="visit.contactLabel">Contact</span>
+                <div class="contact-links">
                   <a href="mailto:alain.de.ridder6@telenet.be">alain.de.ridder6@telenet.be</a>
                   <a href="tel:+34623133417">+34 623 13 34 17</a>
                 </div>
               </div>
-            </article>
 
-            <article class="panel opening-hours">
-              <h3 data-i18n="visit.hoursTitle">Opening hours</h3>
-              <ul>
-                <li><span data-i18n="visit.dayMonday">Monday</span><strong data-i18n="visit.closed">Closed</strong></li>
-                <li><span data-i18n="visit.dayTuesday">Tuesday</span><strong>09:30 - 16:30</strong></li>
-                <li><span data-i18n="visit.dayWednesday">Wednesday</span><strong>09:30 - 16:30</strong></li>
-                <li><span data-i18n="visit.dayThursday">Thursday</span><strong>09:30 - 16:30</strong></li>
-                <li><span data-i18n="visit.dayFriday">Friday</span><strong>09:30 - 16:30</strong></li>
-                <li><span data-i18n="visit.daySaturday">Saturday</span><strong>09:30 - 16:30</strong></li>
-                <li><span data-i18n="visit.daySunday">Sunday</span><strong>09:30 - 16:30</strong></li>
-              </ul>
-            </article>
+              <div class="visit-actions">
+                <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&query=Club+Del+Mar,+Paseo+Maritimo+Rey+de+Espana+6,+Fuengirola" target="_blank" rel="noopener" data-i18n="visit.mapCta">Open Google Maps</a>
+                <a class="button button-secondary" href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener" data-i18n="visit.tripCta">See Tripadvisor listing</a>
+              </div>
+            </aside>
           </div>
+        </section>
 
-          <div class="booking-layout" id="booking">
-            <article class="panel booking-panel">
-              <p class="eyebrow" data-i18n="booking.eyebrow">Reservation system</p>
-              <h3 data-i18n="booking.title">Reserve a table with a cleaner, more discreet booking flow.</h3>
-              <p class="booking-intro" data-i18n="booking.lead">
-                Each booking is saved as structured data while the interface
-                stays calm, minimal and easy to scan.
+        <section class="reservation-section" id="reservation">
+          <div class="reservation-grid">
+            <article class="booking-panel" data-reveal>
+              <p class="eyebrow" data-i18n="booking.eyebrow">Online table booking</p>
+              <h2 data-i18n="booking.title">Elegant booking, fast conversion and a built-in VIP reservation option.</h2>
+              <p class="section-lead" data-i18n="booking.lead">
+                The form stays operational, but the presentation now feels premium enough to belong to a destination restaurant.
               </p>
 
               <form class="booking-form" id="booking-form">
@@ -571,18 +487,19 @@
                     </select>
                   </label>
 
+                  <label class="field field-full booking-checkbox">
+                    <input type="checkbox" name="vip" />
+                    <span data-i18n="booking.vip">VIP reservation request</span>
+                  </label>
+
                   <label class="field field-full">
                     <span data-i18n="booking.notes">Notes</span>
-                    <textarea
-                      name="notes"
-                      rows="4"
-                      maxlength="500"
-                    ></textarea>
+                    <textarea name="notes" rows="4" maxlength="500"></textarea>
                   </label>
                 </div>
 
                 <div class="booking-actions">
-                  <button class="button button-primary" type="submit" data-i18n="booking.submit">Send booking</button>
+                  <button class="button button-primary" type="submit" data-i18n="booking.submit">Send reservation</button>
                   <p
                     class="booking-status"
                     id="booking-status"
@@ -591,191 +508,114 @@
                     data-i18n="booking.statusHint"
                     data-status-key="booking.statusHint"
                   >
-                    Bookings are saved to the backend and available from /api/bookings.
+                    Reservations are saved to the backend and available from /api/bookings.
                   </p>
                 </div>
               </form>
             </article>
 
-            <article class="panel booking-system-panel">
-              <p class="eyebrow" data-i18n="booking.backendEyebrow">Backend handoff</p>
-              <h3 data-i18n="booking.backendTitle">Reservations move directly into a readable JSON feed.</h3>
-              <p class="booking-system-copy" data-i18n="booking.backendLead">
-                The form posts into the backend, each reservation gets a
-                reference and timestamp, and the feed can be protected with an
-                admin key when you go live.
+            <aside class="vip-panel" data-reveal>
+              <p class="eyebrow" data-i18n="vip.eyebrow">Premium membership</p>
+              <h2 data-i18n="vip.title">VIP guest club for priority bookings, special events and higher-touch hospitality.</h2>
+              <p class="section-lead" data-i18n="vip.lead">
+                Position the restaurant as a brand guests want ongoing access to, not just a one-time reservation.
               </p>
 
-              <div class="booking-flow" aria-label="Booking API flow">
-                <div class="booking-flow-card">
-                  <span class="booking-flow-label">POST</span>
-                  <strong>/api/bookings</strong>
-                </div>
-                <div class="booking-flow-card">
-                  <span class="booking-flow-label">GET</span>
-                  <strong>/api/bookings</strong>
-                </div>
-              </div>
-
-              <ul class="feature-list">
-                <li data-i18n="booking.feature1">Every reservation is stored with guest details, party size, notes and a created timestamp.</li>
-                <li data-i18n="booking.feature2">Your internal tools can fetch bookings back as JSON from the same backend endpoint.</li>
-                <li data-i18n="booking.feature3">Set BOOKINGS_ADMIN_KEY before production to protect the booking feed.</li>
+              <ul class="luxury-list vip-list">
+                <li data-i18n="vip.point1">Priority access to high-demand weekends and private event nights</li>
+                <li data-i18n="vip.point2">Invitations to tasting launches, cocktail previews and hosted experiences</li>
+                <li data-i18n="vip.point3">A stronger reason to return, recommend and upgrade the visit</li>
               </ul>
 
-              <p class="booking-security" data-i18n="booking.security">
-                For local demos the feed can stay open, but production should
-                use an admin key and a real database.
-              </p>
-            </article>
+              <a class="button button-secondary" href="mailto:alain.de.ridder6@telenet.be?subject=Club%20Del%20Mar%20VIP%20Guest%20Club" data-i18n="vip.cta">Request VIP access</a>
+            </aside>
           </div>
         </section>
+
+        <footer class="site-footer" data-reveal>
+          <p class="sources-note" data-i18n="footer.sources">
+            Tripadvisor review section uses public review titles, dates and rating context from Club Del Mar's Tripadvisor listing. Google Maps is embedded for live location context.
+          </p>
+          <div class="footer-links">
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g315915-d23657809-Reviews-Club_Del_Mar-Fuengirola_Costa_del_Sol_Province_of_Malaga_Andalucia.html" target="_blank" rel="noopener">Tripadvisor</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Club+Del+Mar,+Paseo+Maritimo+Rey+de+Espana+6,+Fuengirola" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </footer>
       </main>
     </div>
+
     <script>
       const translations = {
         en: {
-          "meta.title": "Club Del Mar | Review Page",
-          "brand.tagline": "Coastal dining, brunch & evening cocktails",
-          "nav.overview": "Overview",
+          "meta.title": "Club Del Mar | Luxury Dining",
+          "brand.tagline": "Luxury seafront dining, brunch and cocktails",
+          "nav.experience": "Experience",
           "nav.gallery": "Gallery",
           "nav.menu": "Menu",
           "nav.reviews": "Reviews",
           "nav.visit": "Visit",
           "cta.book": "Book a table",
-          "hero.eyebrow": "A quieter review-led restaurant page",
-          "hero.title": "A darker, more refined take on Club Del Mar by the promenade.",
-          "hero.lead": "A homepage concept for Club Del Mar with a restrained, editorial feel: confident review signals, elevated atmosphere and a direct path from discovery to reservation.",
-          "hero.buttonReviews": "Read the reviews",
-          "hero.buttonVisit": "See hours & location",
-          "hero.vibe1": "Signature brunch",
-          "hero.vibe2": "Evening cocktails",
-          "hero.vibe3": "Promenade terrace",
-          "hero.note1": "4.8 average guest rating",
-          "hero.note2": "Promenade-facing terrace with a calmer all-day rhythm",
-          "hero.note3": "Brunch, cocktails and well-composed plates",
-          "hero.scoreLabel": "Guest score",
-          "hero.scoreMeta": "24 recent reviews from international guests",
-          "common.service": "Service",
-          "common.food": "Food",
-          "common.value": "Value",
-          "common.atmosphere": "Atmosphere",
-          "gallery.eyebrow": "Atmosphere",
-          "gallery.title": "A rolling stream of plates, cocktails and terrace moments, presented with a more restrained mood.",
-          "snapshot.label": "Guests return for",
-          "snapshot.tag1": "Calm terrace",
-          "snapshot.tag2": "Promenade light",
-          "snapshot.tag3": "Attentive service",
-          "snapshot.tag4": "Good coffee",
-          "snapshot.tag5": "Well-composed plates",
-          "snapshot.tag6": "Balanced choices",
-          "snapshot.quote": "Guests describe a place that feels easy but polished: attentive service, composed plates and a terrace rhythm that invites you to stay longer.",
-          "snapshot.credit": "Inspired by guest sentiment from your reference material",
-          "menu.eyebrow": "Choose a menu",
-          "menu.title": "Open the food or drinks menu directly in a cleaner, more editorial flow.",
-          "menu.lead": "Use the two menu doors below to open separate PDFs for food and drinks.",
-          "menu.foodEyebrow": "Food menu",
-          "menu.foodTitle": "Breakfast, brunch, bowls, burgers, pizza and sweets.",
-          "menu.foodLead": "Open the food menu as a dedicated PDF with a quieter, more refined presentation.",
-          "menu.foodFeature1": "Breakfasts, eggs and toasts",
-          "menu.foodFeature2": "Bowls, salads and sandwiches",
-          "menu.foodFeature3": "Burgers, pizza, vegan dishes and desserts",
-          "menu.foodCta": "Open food PDF",
-          "menu.drinksEyebrow": "Drinks menu",
-          "menu.drinksTitle": "Cocktails, spirits, soft drinks, milkshakes and smoothies.",
-          "menu.drinksLead": "Open the drinks menu in its own PDF for cocktails, bar service and after-brunch ordering.",
-          "menu.drinksFeature1": "Signature and classic cocktails",
-          "menu.drinksFeature2": "Rum, whisky, gin, vodka and liqueurs",
-          "menu.drinksFeature3": "Alcohol-free drinks, juices and smoothies",
-          "menu.drinksCta": "Open drinks PDF",
-          "menu.previewEyebrow": "Menu Preview",
-          "menu.previewTitle": "Food and drinks recreated in text, without embedding the menu photos.",
-          "menu.previewText": "I rebuilt the menu into a readable layout so it feels like part of the brand site, and the full version opens as a separate PDF.",
-          "menu.openPdf": "Open menu PDF",
-          "menu.feature1": "Typed from your current menu references, not image embeds",
-          "menu.feature2": "Includes both food favourites and bar highlights",
-          "menu.feature3": "Designed to open as a clean separate PDF document",
-          "menu.sheetEyebrow": "Club Del Mar Menu",
-          "menu.sheetTitle": "Breakfasts, bowls, burgers, cocktails and late-afternoon drinks.",
-          "menu.openPdfShort": "Open PDF",
-          "menu.col1h1": "Breakfasts",
-          "menu.col1h2": "Toasts",
-          "menu.col2h1": "Bowls & Salads",
-          "menu.col2h2": "Favourites",
-          "menu.col3h1": "Bar Menu",
-          "menu.col3h2": "Alcohol-Free",
-          "menu.item.englishBreakfast": "English breakfast",
-          "menu.item.miniBrunch": "Mini brunch",
-          "menu.item.moroccanBreakfast": "Moroccan breakfast",
-          "menu.item.vitalityBreakfast": "Vitality breakfast",
-          "menu.item.avocadoToasts": "Avocado toasts",
-          "menu.item.salmonToasts": "Salmon toasts",
-          "menu.item.italianToasts": "Italian toasts",
-          "menu.item.omegaToasts": "Omega toasts",
-          "menu.item.alohaBowl": "Aloha bowl",
-          "menu.item.japaneseBowl": "Japanese bowl",
-          "menu.item.caesarSalad": "Caesar salad",
-          "menu.item.balboaSalad": "Balboa salad",
-          "menu.item.miamiBurger": "Miami burger",
-          "menu.item.clubRoyal": "Club sandwich Royal",
-          "menu.item.veganBurger": "Vegan burger",
-          "menu.item.pizzaReina": "Pizza Reina",
-          "menu.item.mojito": "Mojito",
-          "menu.item.pinaColada": "Pina colada",
-          "menu.item.aperol": "Aperol Spritz",
-          "menu.item.espressoMartini": "Espresso Martini",
-          "menu.item.virginMojito": "Virgin mojito",
-          "menu.item.virginPinaColada": "Virgin pina colada",
-          "menu.item.yellowSmoothie": "Yellow smoothie",
-          "menu.item.milkshake": "Club del Mar milkshake",
-          "menu.footerLeft": "Food menu + drinks menu",
-          "menu.footerRight": "2-page typed PDF",
-          "ratings.eyebrow": "Ratings breakdown",
-          "ratings.title": "A review summary with more restraint, contrast and confidence.",
-          "ratings.excellent": "Excellent",
-          "ratings.good": "Good",
-          "ratings.average": "Average",
-          "ratings.poor": "Poor",
-          "ratings.terrible": "Terrible",
-          "ratings.basedOn": "Based on 24 reviews",
-          "ratings.loveMost": "What guests love most",
-          "ratings.cuesTitle": "Refined brand cues",
-          "ratings.cue1": "Clear score recognition without visual noise",
-          "ratings.cue2": "Editorial cards with calmer spacing and stronger contrast",
-          "ratings.cue3": "Charcoal, stone and bronze accents guide the eye",
-          "ratings.cue4": "Category meters inspired by premium hospitality UX",
-          "ratings.cue5": "Visit details placed close to social proof and booking",
-          "reviews.eyebrow": "Guest voices",
-          "reviews.title": "Review cards reworked into a calmer, more premium brand page.",
-          "reviews.card1.title": "Best breakfast in Fuengirola",
-          "reviews.card1.meta": "Guest from Finland • Couples trip • August 2025",
-          "reviews.card1.body": "Beautiful place with impressive service, flavorful food and one of those coffee moments that makes a restaurant memorable.",
-          "reviews.translated": "Translated review",
-          "reviews.planVisit": "Plan your visit",
-          "reviews.card2.title": "Welcoming for international visitors",
-          "reviews.card2.meta": "Guest from the UK • November 2024",
-          "reviews.card2.body": "Helpful staff, generous coffee and a promenade setting that makes the whole experience feel easy and relaxed.",
-          "reviews.card2.tag1": "Value 5/5",
-          "reviews.card2.tag2": "Service 5/5",
-          "reviews.card2.tag3": "Food 5/5",
-          "reviews.card2.tag4": "Atmosphere 5/5",
-          "reviews.card3.title": "Charming atmosphere on the seafront",
-          "reviews.card3.meta": "Guest from Norway • October 2024",
-          "reviews.card3.body": "A consistently enjoyable stop with attentive service, fair pricing and an atmosphere that feels bright, relaxed and social.",
-          "reviews.card3.shot1": "Latte",
-          "reviews.card3.shot2": "Brunch",
-          "reviews.card3.shot3": "Seaside",
-          "reviews.card4.title": "A cafe club people want to recommend",
-          "reviews.card4.meta": "Guest from Argentina • February 2023",
-          "reviews.card4.body": "Varied menu, great drinks and a comfortable atmosphere facing the sea. Perfect reference material for a review-driven homepage.",
-          "reviews.card4.tag1": "Brunch",
-          "reviews.card4.tag2": "Cocktails",
-          "reviews.card4.tag3": "Vegan-friendly",
-          "visit.eyebrow": "Visit Club Del Mar",
-          "visit.title": "Practical details presented with the same calm, refined tone as the rest of the page.",
-          "visit.addressLine2": "Bloque 1, Local 1, 29640 Fuengirola, Spain",
-          "visit.parking": "Street parking nearby • promenade-facing seating",
-          "visit.hoursTitle": "Opening hours",
+          "hero.kicker": "Michelin-inspired hospitality on the Fuengirola promenade",
+          "hero.title": "Where luxury meets taste",
+          "hero.lead": "Club Del Mar reimagined as a destination dining address: cinematic, elegant and designed to convert discerning guests from first glance to confirmed reservation.",
+          "hero.ctaPrimary": "Reserve now",
+          "hero.ctaSecondary": "Explore the menus",
+          "hero.award1": "Tripadvisor 4.8 / 24 reviews",
+          "hero.award2": "Travellers' Choice top 10%",
+          "hero.award3": "Paseo Maritimo Rey de Espana, 6",
+          "hero.sideKicker": "An unforgettable dining experience",
+          "hero.sideTitle": "Refined enough for destination dinners, relaxed enough for long terrace lunches.",
+          "hero.sideLead": "Signature brunch, terrace cocktails, elevated service and a seafront setting that feels more like a ritual than a stop.",
+          "hero.stat1Label": "Guest score",
+          "hero.stat1Value": "Tripadvisor public rating",
+          "hero.stat2Label": "Dining rhythm",
+          "hero.stat2Value": "Tuesday to Sunday",
+          "hero.stat3Label": "Experience",
+          "hero.stat3Value": "Brunch, cocktails, tasting moments",
+          "proof.eyebrow": "Social proof",
+          "proof.title": "Built around real guest trust, elevated service cues and destination-level positioning.",
+          "proof.lead": "The layout now feels like a hospitality brand, not a review template, while keeping genuine public signals visible and credible.",
+          "proof.card1Title": "Tripadvisor-led trust",
+          "proof.card1Copy": "Real public reviews, a 4.8 score and Travellers' Choice positioning anchor the brand in guest proof.",
+          "proof.card2Title": "Google Maps arrival",
+          "proof.card2Copy": "Real-time map directions, one-tap navigation and a clearer location experience remove booking friction.",
+          "proof.card3Title": "Michelin-inspired cues",
+          "proof.card3Copy": "Editorial spacing, confident contrast and calm ritual-driven storytelling bring a more premium hospitality tone.",
+          "proof.card4Title": "Creator-worthy setting",
+          "proof.card4Copy": "Real food, bar and terrace imagery help the restaurant feel like a place guests want to visit and share.",
+          "menu.eyebrow": "Signature menu showcase",
+          "menu.title": "A premium presentation of signature plates, tasting energy and chef-led favourites.",
+          "menu.lead": "Use the dedicated menu documents for full detail, while the homepage frames the experience with fewer, stronger highlights.",
+          "menu.foodPdf": "Food menu PDF",
+          "menu.drinkPdf": "Drinks menu PDF",
+          "menu.foodCta": "Open food menu",
+          "menu.drinkCta": "Open drinks menu",
+          "drinks.eyebrow": "Wine & cocktail experience",
+          "drinks.title": "Handcrafted cocktails, terrace pours and a wine list designed to lengthen the evening.",
+          "drinks.lead": "The drinks story now feels premium enough to stand beside the food, not underneath it.",
+          "chef.eyebrow": "Chef presentation",
+          "chef.title": "The kitchen vision balances terrace ease with sharper hospitality detail.",
+          "chef.lead": "Instead of reading like a cafe, the story now positions Club Del Mar as a place where brunch, service and atmosphere are composed with intention.",
+          "events.eyebrow": "Private dining & events",
+          "events.title": "Designed for birthdays, private dinners, corporate tables and celebration-driven bookings.",
+          "events.lead": "The page now sells occasion dining, not just casual drop-ins.",
+          "reviews.eyebrow": "Tripadvisor review edit",
+          "reviews.title": "Real public review signals, restyled into a more premium editorial presentation.",
+          "reviews.lead": "Review titles, dates and guest origins come from public Tripadvisor material; the body copy below is paraphrased for clarity and presentation.",
+          "reviews.cta": "Read on Tripadvisor",
+          "gallery.eyebrow": "Gallery",
+          "gallery.title": "High-end visual storytelling for food, atmosphere and arrival moments.",
+          "gallery.lead": "The imagery now feels curated, cinematic and sales-oriented instead of looking like a loose photo dump.",
+          "visit.eyebrow": "Location, arrival & contact",
+          "visit.title": "A real Google Maps embed, stronger arrival cues and a cleaner location section.",
+          "visit.lead": "This part now feels credible and useful instead of illustrative, with live map context and direct actions.",
+          "visit.addressLabel": "Address",
+          "visit.arrivalLabel": "Arrival",
+          "visit.arrival": "Promenade-side arrival, nearby parking and easy walk-up access for local and destination guests.",
+          "visit.hoursLabel": "Hours",
+          "visit.contactLabel": "Contact",
+          "visit.mapCta": "Open Google Maps",
+          "visit.tripCta": "See Tripadvisor listing",
           "visit.dayMonday": "Monday",
           "visit.dayTuesday": "Tuesday",
           "visit.dayWednesday": "Wednesday",
@@ -784,9 +624,9 @@
           "visit.daySaturday": "Saturday",
           "visit.daySunday": "Sunday",
           "visit.closed": "Closed",
-          "booking.eyebrow": "Reservation system",
-          "booking.title": "Reserve a table with a cleaner, more discreet booking flow.",
-          "booking.lead": "Each booking is saved as structured data while the interface stays calm, minimal and easy to scan.",
+          "booking.eyebrow": "Online table booking",
+          "booking.title": "Elegant booking, fast conversion and a built-in VIP reservation option.",
+          "booking.lead": "The form stays operational, but the presentation now feels premium enough to belong to a destination restaurant.",
           "booking.name": "Name",
           "booking.email": "Email",
           "booking.phone": "Phone",
@@ -794,162 +634,92 @@
           "booking.time": "Time",
           "booking.guests": "Guests",
           "booking.selectGuests": "Select",
+          "booking.vip": "VIP reservation request",
           "booking.notes": "Notes",
-          "booking.submit": "Send booking",
-          "booking.statusHint": "Bookings are saved to the backend and available from /api/bookings.",
-          "booking.backendEyebrow": "Backend handoff",
-          "booking.backendTitle": "Reservations move directly into a readable JSON feed.",
-          "booking.backendLead": "The form posts into the backend, each reservation gets a reference and timestamp, and the feed can be protected with an admin key when you go live.",
-          "booking.feature1": "Every reservation is stored with guest details, party size, notes and a created timestamp.",
-          "booking.feature2": "Your internal tools can fetch bookings back as JSON from the same backend endpoint.",
-          "booking.feature3": "Set BOOKINGS_ADMIN_KEY before production to protect the booking feed.",
-          "booking.security": "For local demos the feed can stay open, but production should use an admin key and a real database.",
-          "booking.loading": "Sending booking...",
-          "booking.success": "Booking received. Reference: {reference}.",
-          "booking.error": "The booking could not be saved. Please try again."
+          "booking.submit": "Send reservation",
+          "booking.statusHint": "Reservations are saved to the backend and available from /api/bookings.",
+          "booking.loading": "Sending reservation...",
+          "booking.success": "Reservation received. Reference: {reference}.",
+          "booking.error": "The reservation could not be saved. Please try again.",
+          "vip.eyebrow": "Premium membership",
+          "vip.title": "VIP guest club for priority bookings, special events and higher-touch hospitality.",
+          "vip.lead": "Position the restaurant as a brand guests want ongoing access to, not just a one-time reservation.",
+          "vip.point1": "Priority access to high-demand weekends and private event nights",
+          "vip.point2": "Invitations to tasting launches, cocktail previews and hosted experiences",
+          "vip.point3": "A stronger reason to return, recommend and upgrade the visit",
+          "vip.cta": "Request VIP access",
+          "footer.sources": "Tripadvisor review section uses public review titles, dates and rating context from Club Del Mar's Tripadvisor listing. Google Maps is embedded for live location context."
         },
         es: {
-          "meta.title": "Club Del Mar | Pagina de Resenas",
-          "brand.tagline": "Cocina costera, brunch y cocteles de tarde",
-          "nav.overview": "Resumen",
+          "meta.title": "Club Del Mar | Dining de lujo",
+          "brand.tagline": "Dining frente al mar, brunch y cocteles",
+          "nav.experience": "Experiencia",
           "nav.gallery": "Galeria",
           "nav.menu": "Menu",
           "nav.reviews": "Resenas",
-          "nav.visit": "Visitanos",
+          "nav.visit": "Visita",
           "cta.book": "Reservar mesa",
-          "hero.eyebrow": "Una pagina de resenas mas sobria",
-          "hero.title": "Una interpretacion mas oscura y refinada de Club Del Mar junto al paseo.",
-          "hero.lead": "Un concepto de inicio para Club Del Mar con un tono mas sereno y editorial: senales de resena claras, atmosfera cuidada y un camino directo desde el descubrimiento hasta la reserva.",
-          "hero.buttonReviews": "Leer resenas",
-          "hero.buttonVisit": "Ver horario y ubicacion",
-          "hero.vibe1": "Brunch de firma",
-          "hero.vibe2": "Cocteles de tarde",
-          "hero.vibe3": "Terraza del paseo",
-          "hero.note1": "Valoracion media de 4.8",
-          "hero.note2": "Terraza frente al paseo con un ritmo mas sereno durante todo el dia",
-          "hero.note3": "Brunch, cocteles y platos mejor compuestos",
-          "hero.scoreLabel": "Puntuacion de clientes",
-          "hero.scoreMeta": "24 resenas recientes de clientes internacionales",
-          "common.service": "Servicio",
-          "common.food": "Comida",
-          "common.value": "Relacion calidad-precio",
-          "common.atmosphere": "Ambiente",
-          "gallery.eyebrow": "Atmosfera",
-          "gallery.title": "Una secuencia en movimiento de platos, cocteles y momentos de terraza con un tono mas contenido.",
-          "snapshot.label": "Los clientes vuelven por",
-          "snapshot.tag1": "Terraza tranquila",
-          "snapshot.tag2": "Luz del paseo",
-          "snapshot.tag3": "Servicio atento",
-          "snapshot.tag4": "Buen cafe",
-          "snapshot.tag5": "Platos bien compuestos",
-          "snapshot.tag6": "Opciones equilibradas",
-          "snapshot.quote": "Los clientes describen un lugar facil pero cuidado: servicio atento, platos mejor compuestos y una terraza que invita a quedarse mas tiempo.",
-          "snapshot.credit": "Inspirado en el sentimiento de los clientes de tu material de referencia",
-          "menu.eyebrow": "Elige menu",
-          "menu.title": "Abre el menu de comida o el de bebidas directamente dentro de un flujo mas limpio y editorial.",
-          "menu.lead": "Usa las dos columnas de abajo para abrir PDFs separados de comida y bebidas.",
-          "menu.foodEyebrow": "Menu de comida",
-          "menu.foodTitle": "Desayunos, brunch, bowls, hamburguesas, pizza y postres.",
-          "menu.foodLead": "Abre el menu de comida como un PDF dedicado con una presentacion mas serena y refinada.",
-          "menu.foodFeature1": "Desayunos, huevos y tostadas",
-          "menu.foodFeature2": "Bowls, ensaladas y sandwiches",
-          "menu.foodFeature3": "Hamburguesas, pizza, platos veganos y postres",
-          "menu.foodCta": "Abrir PDF de comida",
-          "menu.drinksEyebrow": "Menu de bebidas",
-          "menu.drinksTitle": "Cocteles, destilados, refrescos, batidos y smoothies.",
-          "menu.drinksLead": "Abre el menu de bebidas en su propio PDF para cocteles, servicio de barra y pedidos despues del brunch.",
-          "menu.drinksFeature1": "Cocteles de autor y clasicos",
-          "menu.drinksFeature2": "Ron, whisky, ginebra, vodka y licores",
-          "menu.drinksFeature3": "Bebidas sin alcohol, zumos y smoothies",
-          "menu.drinksCta": "Abrir PDF de bebidas",
-          "menu.previewEyebrow": "Vista previa del menu",
-          "menu.previewTitle": "Comida y bebidas recreadas en texto, sin incrustar las fotos del menu.",
-          "menu.previewText": "Rehice el menu en un formato legible para que se sienta como parte de la web de marca, y la version completa se abre como PDF independiente.",
-          "menu.openPdf": "Abrir PDF del menu",
-          "menu.feature1": "Escrito a partir de tus referencias actuales, no como imagen incrustada",
-          "menu.feature2": "Incluye favoritos de comida y destacados del bar",
-          "menu.feature3": "Pensado para abrirse como un PDF limpio e independiente",
-          "menu.sheetEyebrow": "Menu Club Del Mar",
-          "menu.sheetTitle": "Desayunos, bowls, hamburguesas, cocteles y bebidas de tarde.",
-          "menu.openPdfShort": "Abrir PDF",
-          "menu.col1h1": "Desayunos",
-          "menu.col1h2": "Tostadas",
-          "menu.col2h1": "Bowls y ensaladas",
-          "menu.col2h2": "Favoritos",
-          "menu.col3h1": "Bar",
-          "menu.col3h2": "Sin alcohol",
-          "menu.item.englishBreakfast": "Desayuno ingles",
-          "menu.item.miniBrunch": "Mini brunch",
-          "menu.item.moroccanBreakfast": "Desayuno marroqui",
-          "menu.item.vitalityBreakfast": "Desayuno vitality",
-          "menu.item.avocadoToasts": "Tostadas de aguacate",
-          "menu.item.salmonToasts": "Tostadas de salmon",
-          "menu.item.italianToasts": "Tostadas italianas",
-          "menu.item.omegaToasts": "Tostadas omega",
-          "menu.item.alohaBowl": "Aloha bowl",
-          "menu.item.japaneseBowl": "Japanese bowl",
-          "menu.item.caesarSalad": "Ensalada cesar",
-          "menu.item.balboaSalad": "Ensalada Balboa",
-          "menu.item.miamiBurger": "Hamburguesa Miami",
-          "menu.item.clubRoyal": "Club sandwich Royal",
-          "menu.item.veganBurger": "Hamburguesa vegana",
-          "menu.item.pizzaReina": "Pizza Reina",
-          "menu.item.mojito": "Mojito",
-          "menu.item.pinaColada": "Pina colada",
-          "menu.item.aperol": "Aperol Spritz",
-          "menu.item.espressoMartini": "Espresso Martini",
-          "menu.item.virginMojito": "Mojito sin alcohol",
-          "menu.item.virginPinaColada": "Pina colada sin alcohol",
-          "menu.item.yellowSmoothie": "Smoothie yellow",
-          "menu.item.milkshake": "Milkshake Club del Mar",
-          "menu.footerLeft": "Menu de comida + menu de bebidas",
-          "menu.footerRight": "PDF escrito de 2 paginas",
-          "ratings.eyebrow": "Desglose de valoraciones",
-          "ratings.title": "Un resumen de opiniones con mas calma, contraste y caracter.",
-          "ratings.excellent": "Excelente",
-          "ratings.good": "Bueno",
-          "ratings.average": "Normal",
-          "ratings.poor": "Malo",
-          "ratings.terrible": "Pesimo",
-          "ratings.basedOn": "Basado en 24 resenas",
-          "ratings.loveMost": "Lo que mas gusta a los clientes",
-          "ratings.cuesTitle": "Claves de marca refinadas",
-          "ratings.cue1": "Lectura clara de la puntuacion sin ruido visual",
-          "ratings.cue2": "Tarjetas editoriales con mas calma y mejor contraste",
-          "ratings.cue3": "Acentos carbon, piedra y bronce que guian la mirada",
-          "ratings.cue4": "Barras inspiradas en UX de hospitalidad premium",
-          "ratings.cue5": "Datos de visita cerca de la prueba social y la reserva",
-          "reviews.eyebrow": "Voces de clientes",
-          "reviews.title": "Tarjetas de resenas adaptadas a una pagina de marca mas tranquila y premium.",
-          "reviews.card1.title": "El mejor desayuno de Fuengirola",
-          "reviews.card1.meta": "Cliente de Finlandia • Viaje en pareja • Agosto 2025",
-          "reviews.card1.body": "Un lugar precioso con un servicio impresionante, comida sabrosa y uno de esos cafes que hacen memorable la experiencia.",
-          "reviews.translated": "Resena traducida",
-          "reviews.planVisit": "Planifica tu visita",
-          "reviews.card2.title": "Muy acogedor para visitantes internacionales",
-          "reviews.card2.meta": "Cliente del Reino Unido • Noviembre 2024",
-          "reviews.card2.body": "Personal atento, cafe generoso y un entorno en el paseo maritimo que hace que todo se sienta facil y relajado.",
-          "reviews.card2.tag1": "Calidad-precio 5/5",
-          "reviews.card2.tag2": "Servicio 5/5",
-          "reviews.card2.tag3": "Comida 5/5",
-          "reviews.card2.tag4": "Ambiente 5/5",
-          "reviews.card3.title": "Ambiente encantador frente al mar",
-          "reviews.card3.meta": "Cliente de Noruega • Octubre 2024",
-          "reviews.card3.body": "Una parada siempre agradable, con servicio atento, precios justos y un ambiente luminoso, relajado y social.",
-          "reviews.card3.shot1": "Cafe",
-          "reviews.card3.shot2": "Brunch",
-          "reviews.card3.shot3": "Mar",
-          "reviews.card4.title": "Un cafe club que apetece recomendar",
-          "reviews.card4.meta": "Cliente de Argentina • Febrero 2023",
-          "reviews.card4.body": "Menu variado, buenas bebidas y una atmosfera comoda frente al mar. Material perfecto para una pagina basada en resenas.",
-          "reviews.card4.tag1": "Brunch",
-          "reviews.card4.tag2": "Cocteles",
-          "reviews.card4.tag3": "Apto para veganos",
-          "visit.eyebrow": "Visita Club Del Mar",
-          "visit.title": "Detalles practicos presentados con el mismo tono sereno y refinado que el resto de la pagina.",
-          "visit.addressLine2": "Bloque 1, Local 1, 29640 Fuengirola, Espana",
-          "visit.parking": "Aparcamiento cercano • terraza orientada al paseo",
-          "visit.hoursTitle": "Horario",
+          "hero.kicker": "Hospitalidad inspirada en Michelin en el paseo de Fuengirola",
+          "hero.title": "Donde el lujo se encuentra con el sabor",
+          "hero.lead": "Club Del Mar reinterpretado como un destino gastronomico: cinematografico, elegante y pensado para convertir desde la primera impresion hasta la reserva.",
+          "hero.ctaPrimary": "Reservar ahora",
+          "hero.ctaSecondary": "Explorar menus",
+          "hero.award1": "Tripadvisor 4.8 / 24 resenas",
+          "hero.award2": "Travellers' Choice top 10%",
+          "hero.award3": "Paseo Maritimo Rey de Espana, 6",
+          "hero.sideKicker": "Una experiencia gastronomica inolvidable",
+          "hero.sideTitle": "Lo bastante refinado para cenas destino y lo bastante relajado para largos almuerzos en terraza.",
+          "hero.sideLead": "Brunch de firma, cocteles de terraza, servicio elevado y un entorno frente al mar que se siente mas ritual que parada.",
+          "hero.stat1Label": "Puntuacion",
+          "hero.stat1Value": "Valoracion publica de Tripadvisor",
+          "hero.stat2Label": "Ritmo de servicio",
+          "hero.stat2Value": "De martes a domingo",
+          "hero.stat3Label": "Experiencia",
+          "hero.stat3Value": "Brunch, cocteles y momentos tasting",
+          "proof.eyebrow": "Prueba social",
+          "proof.title": "Construido sobre confianza real de clientes, codigos de servicio elevados y posicionamiento de destino.",
+          "proof.lead": "La pagina ahora se siente como una marca de hospitalidad y no como una plantilla de resenas.",
+          "proof.card1Title": "Confianza desde Tripadvisor",
+          "proof.card1Copy": "Resenas publicas reales, una puntuacion de 4.8 y la posicion Travellers' Choice sostienen la marca.",
+          "proof.card2Title": "Llegada con Google Maps",
+          "proof.card2Copy": "Mapa real, navegacion directa y una experiencia de ubicacion mas clara reducen la friccion al reservar.",
+          "proof.card3Title": "Claves inspiradas en Michelin",
+          "proof.card3Copy": "Espaciado editorial, contraste seguro y storytelling mas ritual elevan el tono de hospitalidad.",
+          "proof.card4Title": "Escenario para creadores",
+          "proof.card4Copy": "La imageneria real de platos, barra y terraza ayuda a que el restaurante se sienta compartible y deseable.",
+          "menu.eyebrow": "Menu de firma",
+          "menu.title": "Una presentacion premium de platos clave, energia tasting y favoritos guiados por cocina.",
+          "menu.lead": "Usa los menus dedicados para el detalle completo mientras la portada resume la experiencia con menos elementos y mas impacto.",
+          "menu.foodPdf": "PDF de comida",
+          "menu.drinkPdf": "PDF de bebidas",
+          "menu.foodCta": "Abrir menu de comida",
+          "menu.drinkCta": "Abrir menu de bebidas",
+          "drinks.eyebrow": "Vino y cocteles",
+          "drinks.title": "Cocteles artesanales, servicio de terraza y una carta de vinos pensada para alargar la tarde.",
+          "drinks.lead": "La historia liquida ahora se siente tan premium como la comida.",
+          "chef.eyebrow": "Vision de cocina",
+          "chef.title": "La vision de cocina equilibra la facilidad de la terraza con una hospitalidad mas precisa.",
+          "chef.lead": "En lugar de parecer un cafe, la narrativa presenta Club Del Mar como un lugar donde brunch, servicio y atmosfera se componen con intencion.",
+          "events.eyebrow": "Private dining y eventos",
+          "events.title": "Pensado para birthdays, cenas privadas, mesas corporativas y celebraciones.",
+          "events.lead": "La pagina ahora vende ocasiones, no solo visitas casuales.",
+          "reviews.eyebrow": "Edicion de resenas Tripadvisor",
+          "reviews.title": "Senales reales de opinion publica, reestilizadas dentro de una presentacion editorial mas premium.",
+          "reviews.lead": "Los titulos, fechas y origenes de los clientes proceden de material publico de Tripadvisor; el texto inferior esta resumido para claridad y presentacion.",
+          "reviews.cta": "Ver en Tripadvisor",
+          "gallery.eyebrow": "Galeria",
+          "gallery.title": "Storytelling visual de alto nivel para comida, atmosfera y llegada.",
+          "gallery.lead": "La imageneria ahora se siente mas curada, cinematografica y orientada a conversion.",
+          "visit.eyebrow": "Ubicacion, llegada y contacto",
+          "visit.title": "Embed real de Google Maps, mejores claves de llegada y una seccion de ubicacion mas limpia.",
+          "visit.lead": "Esta parte ahora resulta creible y util, con contexto real del mapa y acciones directas.",
+          "visit.addressLabel": "Direccion",
+          "visit.arrivalLabel": "Llegada",
+          "visit.arrival": "Llegada junto al paseo, aparcamiento cercano y acceso sencillo para clientes locales y de destino.",
+          "visit.hoursLabel": "Horario",
+          "visit.contactLabel": "Contacto",
+          "visit.mapCta": "Abrir Google Maps",
+          "visit.tripCta": "Ver ficha en Tripadvisor",
           "visit.dayMonday": "Lunes",
           "visit.dayTuesday": "Martes",
           "visit.dayWednesday": "Miercoles",
@@ -958,9 +728,9 @@
           "visit.daySaturday": "Sabado",
           "visit.daySunday": "Domingo",
           "visit.closed": "Cerrado",
-          "booking.eyebrow": "Sistema de reservas",
-          "booking.title": "Reserva una mesa con un flujo mas limpio y discreto.",
-          "booking.lead": "Cada reserva se guarda como dato estructurado mientras la interfaz se mantiene calma, minima y facil de leer.",
+          "booking.eyebrow": "Reserva online",
+          "booking.title": "Reserva elegante, conversion rapida y opcion VIP integrada.",
+          "booking.lead": "El formulario sigue funcionando, pero ahora la presentacion se siente a la altura de un restaurante destino.",
           "booking.name": "Nombre",
           "booking.email": "Correo",
           "booking.phone": "Telefono",
@@ -968,162 +738,92 @@
           "booking.time": "Hora",
           "booking.guests": "Comensales",
           "booking.selectGuests": "Selecciona",
+          "booking.vip": "Solicitud de reserva VIP",
           "booking.notes": "Notas",
           "booking.submit": "Enviar reserva",
           "booking.statusHint": "Las reservas se guardan en el backend y estan disponibles desde /api/bookings.",
-          "booking.backendEyebrow": "Entrega al backend",
-          "booking.backendTitle": "La reserva entra directamente en un feed JSON legible.",
-          "booking.backendLead": "El formulario envia la reserva al backend, cada solicitud recibe una referencia y una marca temporal, y el feed puede protegerse con una clave de administrador cuando salga a produccion.",
-          "booking.feature1": "Cada reserva se guarda con los datos del cliente, numero de personas, notas y fecha de creacion.",
-          "booking.feature2": "Tus herramientas internas pueden recuperar las reservas como JSON desde el mismo endpoint.",
-          "booking.feature3": "Configura BOOKINGS_ADMIN_KEY antes de produccion para proteger el feed de reservas.",
-          "booking.security": "Para demos locales el feed puede quedar abierto, pero en produccion deberia usar una clave de administrador y una base de datos real.",
           "booking.loading": "Enviando reserva...",
           "booking.success": "Reserva recibida. Referencia: {reference}.",
-          "booking.error": "No se pudo guardar la reserva. Intentalo de nuevo."
+          "booking.error": "No se pudo guardar la reserva. Intentalo de nuevo.",
+          "vip.eyebrow": "Membership premium",
+          "vip.title": "Club VIP para prioridad en reservas, eventos especiales y una hospitalidad de mayor nivel.",
+          "vip.lead": "Posiciona el restaurante como una marca a la que el cliente quiere seguir accediendo, no solo visitar una vez.",
+          "vip.point1": "Acceso prioritario a fines de semana de alta demanda y noches privadas",
+          "vip.point2": "Invitaciones a lanzamientos tasting, previews de cocteleria y experiencias anfitrionas",
+          "vip.point3": "Una razon mas fuerte para volver, recomendar y elevar la visita",
+          "vip.cta": "Solicitar acceso VIP",
+          "footer.sources": "La seccion de Tripadvisor usa titulos, fechas y contexto de valoracion publicos de la ficha de Club Del Mar. Google Maps esta integrado para contexto real de ubicacion."
         },
         sv: {
-          "meta.title": "Club Del Mar | Recensionssida",
-          "brand.tagline": "Kustnara dining, brunch och cocktails",
-          "nav.overview": "Oversikt",
+          "meta.title": "Club Del Mar | Lyxig dining",
+          "brand.tagline": "Lyxig dining vid havet, brunch och cocktails",
+          "nav.experience": "Upplevelsen",
           "nav.gallery": "Galleri",
           "nav.menu": "Meny",
           "nav.reviews": "Recensioner",
           "nav.visit": "Besok",
           "cta.book": "Boka bord",
-          "hero.eyebrow": "En lugnare recensionsdriven restaurangsida",
-          "hero.title": "En morkare, mer forfinad tolkning av Club Del Mar vid promenaden.",
-          "hero.lead": "Ett startsidekoncept for Club Del Mar med mer restrained och editoriell kansla: tydliga recensionssignaler, en mer forfinad atmosfar och en rak vag fran upptackt till bokning.",
-          "hero.buttonReviews": "Las recensioner",
-          "hero.buttonVisit": "Se tider och plats",
-          "hero.vibe1": "Signaturbrunch",
-          "hero.vibe2": "Cocktails pa kvallen",
-          "hero.vibe3": "Terrass mot promenaden",
-          "hero.note1": "4.8 i snittbetyg",
-          "hero.note2": "Terrass mot promenaden med en lugnare helhetskansla",
-          "hero.note3": "Brunch, cocktails och mer komponerade ratter",
-          "hero.scoreLabel": "Gastbetyg",
-          "hero.scoreMeta": "24 nya recensioner fran internationella gaster",
-          "common.service": "Service",
-          "common.food": "Mat",
-          "common.value": "Varde",
-          "common.atmosphere": "Atmosfar",
-          "gallery.eyebrow": "Atmosfar",
-          "gallery.title": "Ett rullande flode av tallrikar, cocktails och terrassogonblick i en mer nedtonad ton.",
-          "snapshot.label": "Gaster kommer tillbaka for",
-          "snapshot.tag1": "Lugn terrass",
-          "snapshot.tag2": "Ljuset vid promenaden",
-          "snapshot.tag3": "Uppmarksam service",
-          "snapshot.tag4": "Bra kaffe",
-          "snapshot.tag5": "Mer komponerade ratter",
-          "snapshot.tag6": "Balanserade val",
-          "snapshot.quote": "Gaster beskriver en plats som kanns enkel men genomarbetad: uppmarksam service, mer komponerade ratter och en terrassrytm som far en att stanna langre.",
-          "snapshot.credit": "Inspirerat av gastkanslan i ditt referensmaterial",
-          "menu.eyebrow": "Valj meny",
-          "menu.title": "Oppna matmenyn eller dryckesmenyn direkt i ett renare, mer editoriellt upplagg.",
-          "menu.lead": "Anvand de tva menyvalen nedan for att oppna separata PDF:er for mat och dryck.",
-          "menu.foodEyebrow": "Matmeny",
-          "menu.foodTitle": "Frukost, brunch, bowls, burgare, pizza och desserter.",
-          "menu.foodLead": "Oppna matmenyn som en egen PDF med ett lugnare och mer forfinat uttryck.",
-          "menu.foodFeature1": "Frukostar, agg och toast",
-          "menu.foodFeature2": "Bowls, sallader och sandwiches",
-          "menu.foodFeature3": "Burgare, pizza, vegoratter och desserter",
-          "menu.foodCta": "Oppna mat-PDF",
-          "menu.drinksEyebrow": "Dryckesmeny",
-          "menu.drinksTitle": "Cocktails, sprit, lask, milkshakes och smoothies.",
-          "menu.drinksLead": "Oppna dryckesmenyn som en egen PDF for cocktails, barservice och bestallningar efter brunch.",
-          "menu.drinksFeature1": "Signaturcocktails och klassiker",
-          "menu.drinksFeature2": "Rom, whisky, gin, vodka och likorer",
-          "menu.drinksFeature3": "Alkoholfria drinkar, juicer och smoothies",
-          "menu.drinksCta": "Oppna dryckes-PDF",
-          "menu.previewEyebrow": "Menyforhandsvisning",
-          "menu.previewTitle": "Mat och dryck atergivna i text, utan att anvanda menybilderna.",
-          "menu.previewText": "Jag byggde om menyn till ett mer lasbart format sa att den kanns som en naturlig del av varumarkessidan, och hela versionen oppnas som en separat PDF.",
-          "menu.openPdf": "Oppna meny-PDF",
-          "menu.feature1": "Nedskriven fran dina menyreferenser, inte inlagd som bild",
-          "menu.feature2": "Innehaller bade matfavoriter och utvalda bardrinkar",
-          "menu.feature3": "Designad for att oppnas som ett renodlat separat PDF-dokument",
-          "menu.sheetEyebrow": "Club Del Mar meny",
-          "menu.sheetTitle": "Frukostar, bowls, burgare, cocktails och senare drycker.",
-          "menu.openPdfShort": "Oppna PDF",
-          "menu.col1h1": "Frukostar",
-          "menu.col1h2": "Toast",
-          "menu.col2h1": "Bowls och sallader",
-          "menu.col2h2": "Favoriter",
-          "menu.col3h1": "Bar",
-          "menu.col3h2": "Alkoholfritt",
-          "menu.item.englishBreakfast": "Engelsk frukost",
-          "menu.item.miniBrunch": "Mini brunch",
-          "menu.item.moroccanBreakfast": "Marockansk frukost",
-          "menu.item.vitalityBreakfast": "Vitality-frukost",
-          "menu.item.avocadoToasts": "Avokadotoast",
-          "menu.item.salmonToasts": "Laxtoast",
-          "menu.item.italianToasts": "Italiensk toast",
-          "menu.item.omegaToasts": "Omega-toast",
-          "menu.item.alohaBowl": "Aloha bowl",
-          "menu.item.japaneseBowl": "Japanese bowl",
-          "menu.item.caesarSalad": "Caesarsallad",
-          "menu.item.balboaSalad": "Balboa-sallad",
-          "menu.item.miamiBurger": "Miami-burgare",
-          "menu.item.clubRoyal": "Club sandwich Royal",
-          "menu.item.veganBurger": "Vegoburgare",
-          "menu.item.pizzaReina": "Pizza Reina",
-          "menu.item.mojito": "Mojito",
-          "menu.item.pinaColada": "Pina colada",
-          "menu.item.aperol": "Aperol Spritz",
-          "menu.item.espressoMartini": "Espresso Martini",
-          "menu.item.virginMojito": "Virgin mojito",
-          "menu.item.virginPinaColada": "Virgin pina colada",
-          "menu.item.yellowSmoothie": "Yellow smoothie",
-          "menu.item.milkshake": "Club del Mar milkshake",
-          "menu.footerLeft": "Matmeny + dryckesmeny",
-          "menu.footerRight": "2-sidig skriven PDF",
-          "ratings.eyebrow": "Betygsoversikt",
-          "ratings.title": "En recensionsoversikt med mer lugn, kontrast och sjalvsakerhet.",
-          "ratings.excellent": "Utmarkt",
-          "ratings.good": "Bra",
-          "ratings.average": "Medel",
-          "ratings.poor": "Dalig",
-          "ratings.terrible": "Usel",
-          "ratings.basedOn": "Baserat pa 24 recensioner",
-          "ratings.loveMost": "Det gaster gillar mest",
-          "ratings.cuesTitle": "Forfinade varumarkesdrag",
-          "ratings.cue1": "Tydligt betyg utan visuell stress",
-          "ratings.cue2": "Redaktionella kort med lugnare spacing och starkare kontrast",
-          "ratings.cue3": "Kol, sten och bronstoner leder blicken",
-          "ratings.cue4": "Kategoriindikatorer inspirerade av premium hospitality-UX",
-          "ratings.cue5": "Besoksinfo placerad nara social proof och bokning",
-          "reviews.eyebrow": "Gastrost",
-          "reviews.title": "Recensionskort omarbetade till en lugnare och mer premiumdriven varumarkessida.",
-          "reviews.card1.title": "Basta frukosten i Fuengirola",
-          "reviews.card1.meta": "Gast fran Finland • Parresa • Augusti 2025",
-          "reviews.card1.body": "En vacker plats med imponerande service, smakrik mat och en kaffestund som gor restaurangen minnesvard.",
-          "reviews.translated": "Oversatt recension",
-          "reviews.planVisit": "Planera ditt besok",
-          "reviews.card2.title": "Valkomnande for internationella besokare",
-          "reviews.card2.meta": "Gast fran Storbritannien • November 2024",
-          "reviews.card2.body": "Hjalpsam personal, generost kaffe och ett lage pa strandpromenaden som gor allt enkelt och avslappnat.",
-          "reviews.card2.tag1": "Varde 5/5",
-          "reviews.card2.tag2": "Service 5/5",
-          "reviews.card2.tag3": "Mat 5/5",
-          "reviews.card2.tag4": "Atmosfar 5/5",
-          "reviews.card3.title": "Charmig atmosfar vid havet",
-          "reviews.card3.meta": "Gast fran Norge • Oktober 2024",
-          "reviews.card3.body": "Ett genomgaende trevligt stopp med uppmarksam service, rimliga priser och en ljus, social och avslappnad kansla.",
-          "reviews.card3.shot1": "Latte",
-          "reviews.card3.shot2": "Brunch",
-          "reviews.card3.shot3": "Havsnara",
-          "reviews.card4.title": "Ett cafe club man vill rekommendera",
-          "reviews.card4.meta": "Gast fran Argentina • Februari 2023",
-          "reviews.card4.body": "Variationsrik meny, bra drycker och en bekvam atmosfar framfor havet. Perfekt referensmaterial for en recensionsdriven startsida.",
-          "reviews.card4.tag1": "Brunch",
-          "reviews.card4.tag2": "Cocktails",
-          "reviews.card4.tag3": "Vegovanligt",
-          "visit.eyebrow": "Besok Club Del Mar",
-          "visit.title": "Praktisk information presenterad med samma lugna, forfinade ton som resten av sidan.",
-          "visit.addressLine2": "Bloque 1, Local 1, 29640 Fuengirola, Spanien",
-          "visit.parking": "Gatuparkering i narheten • sittplatser mot promenaden",
-          "visit.hoursTitle": "Oppettider",
+          "hero.kicker": "Michelin-inspirerad hospitality pa strandpromenaden i Fuengirola",
+          "hero.title": "Dar lyx moter smak",
+          "hero.lead": "Club Del Mar omtolkad som en riktig destination: cinematisk, elegant och byggd for att konvertera fran forsta intryck till bekrftad bokning.",
+          "hero.ctaPrimary": "Boka nu",
+          "hero.ctaSecondary": "Utforska menyerna",
+          "hero.award1": "Tripadvisor 4.8 / 24 recensioner",
+          "hero.award2": "Travellers' Choice topp 10%",
+          "hero.award3": "Paseo Maritimo Rey de Espana, 6",
+          "hero.sideKicker": "En oforglomlig diningupplevelse",
+          "hero.sideTitle": "Tillrackligt forfinad for destinationsmiddagar, tillrackligt avslappnad for langa luncher pa terrassen.",
+          "hero.sideLead": "Signaturbrunch, terrasscocktails, hogre serviceniva och ett havsnara lage som kanns mer som en ritual an ett stopp.",
+          "hero.stat1Label": "Gastbetyg",
+          "hero.stat1Value": "Publik Tripadvisor-bedomning",
+          "hero.stat2Label": "Serveringsrytm",
+          "hero.stat2Value": "Tisdag till sondag",
+          "hero.stat3Label": "Upplevelse",
+          "hero.stat3Value": "Brunch, cocktails och tasting-ogonblick",
+          "proof.eyebrow": "Social proof",
+          "proof.title": "Byggd runt verkligt gastfortroende, mer exklusiva servicekoder och en tydligare destinationskansla.",
+          "proof.lead": "Sidan kanns nu mer som ett hospitality-varumarke an en recensionstemplate.",
+          "proof.card1Title": "Tripadvisor-baserat fortroende",
+          "proof.card1Copy": "Riktiga publika recensioner, ett betyg pa 4.8 och Travellers' Choice forankrar varumarket i gastbevis.",
+          "proof.card2Title": "Ankomst via Google Maps",
+          "proof.card2Copy": "En riktig karta, direktnavigering och en tydligare platsupplevelse minskar friktionen till bokning.",
+          "proof.card3Title": "Michelin-inspirerade uttryck",
+          "proof.card3Copy": "Redaktionell spacing, trygg kontrast och lugn storytelling lyfter hospitality-kanslan.",
+          "proof.card4Title": "Miljo att dela vidare",
+          "proof.card4Copy": "Riktiga bilder av mat, bar och terrass gor restaurangen mer vard att besoka och dela.",
+          "menu.eyebrow": "Signaturmeny",
+          "menu.title": "En premiumpresentation av signaturratter, tasting-kansla och koksledda favoriter.",
+          "menu.lead": "Anvand de dedikerade menyerna for detaljerna medan startsidan ramar in upplevelsen med farre men starkare hojdpunkter.",
+          "menu.foodPdf": "Matmeny PDF",
+          "menu.drinkPdf": "Dryckesmeny PDF",
+          "menu.foodCta": "Oppna matmeny",
+          "menu.drinkCta": "Oppna dryckesmeny",
+          "drinks.eyebrow": "Vin & cocktails",
+          "drinks.title": "Handgjorda cocktails, terrassservering och en vinlista som far kvallen att dra ut.",
+          "drinks.lead": "Dryckesdelen kanns nu lika premium som maten.",
+          "chef.eyebrow": "Kokets vision",
+          "chef.title": "Kokets riktning balanserar terrassens enkelhet med skarpare hospitality-detalj.",
+          "chef.lead": "I stallet for att kannas som ett cafe presenteras Club Del Mar nu som en plats dar brunch, service och atmosfar ar komponerade med avsikt.",
+          "events.eyebrow": "Private dining & events",
+          "events.title": "Byggd for birthdays, privata middagar, foretagsbord och firanden.",
+          "events.lead": "Sidan saljer nu tillfallen, inte bara spontana besok.",
+          "reviews.eyebrow": "Tripadvisor-redigering",
+          "reviews.title": "Riktiga publika recensionssignaler, omarbetade till en mer exklusiv editorial presentation.",
+          "reviews.lead": "Titlar, datum och gastursprung kommer fran publikt Tripadvisor-material; texten nedan ar sammanfattad for tydlighet och presentation.",
+          "reviews.cta": "Las pa Tripadvisor",
+          "gallery.eyebrow": "Galleri",
+          "gallery.title": "Mer exklusiv visuell storytelling for mat, atmosfar och ankomst.",
+          "gallery.lead": "Bilderna kanns nu mer kuraterade, cinematiskta och konverteringsdrivna.",
+          "visit.eyebrow": "Plats, ankomst & kontakt",
+          "visit.title": "Riktig Google Maps-embed, starkare ankomstsignaler och en renare platssektion.",
+          "visit.lead": "Den har delen kanns nu trovrdig och anvandbar med riktig kartkontext och tydliga handlingar.",
+          "visit.addressLabel": "Adress",
+          "visit.arrivalLabel": "Ankomst",
+          "visit.arrival": "Ankomst langs promenaden, parkering i narheten och enkel walk-up access for lokala och resande gaster.",
+          "visit.hoursLabel": "Oppettider",
+          "visit.contactLabel": "Kontakt",
+          "visit.mapCta": "Oppna Google Maps",
+          "visit.tripCta": "Se Tripadvisor-listning",
           "visit.dayMonday": "Mandag",
           "visit.dayTuesday": "Tisdag",
           "visit.dayWednesday": "Onsdag",
@@ -1132,9 +832,9 @@
           "visit.daySaturday": "Lordag",
           "visit.daySunday": "Sondag",
           "visit.closed": "Stangt",
-          "booking.eyebrow": "Bokningssystem",
-          "booking.title": "Boka bord med ett renare och mer diskret bokningsflode.",
-          "booking.lead": "Varje bokning sparas som strukturerad data medan granssnittet forblir lugnt, minimalistiskt och latt att lasa.",
+          "booking.eyebrow": "Onlinebokning",
+          "booking.title": "Elegant bokning, snabb konvertering och inbyggt VIP-val.",
+          "booking.lead": "Formularet fungerar fortfarande, men presentationen kanns nu vardig en riktig destinationsrestaurang.",
           "booking.name": "Namn",
           "booking.email": "E-post",
           "booking.phone": "Telefon",
@@ -1142,19 +842,21 @@
           "booking.time": "Tid",
           "booking.guests": "Antal gaster",
           "booking.selectGuests": "Valj",
+          "booking.vip": "VIP-bokningsonskemal",
           "booking.notes": "Noteringar",
           "booking.submit": "Skicka bokning",
           "booking.statusHint": "Bokningar sparas i backend och finns tillgangliga via /api/bookings.",
-          "booking.backendEyebrow": "Backend-flode",
-          "booking.backendTitle": "Bokningen gar direkt in i ett lasbart JSON-flode.",
-          "booking.backendLead": "Formularet postar till backend, varje bokning far en referens och tidsstampel, och flodet kan skyddas med en admin-nyckel nar ni gar live.",
-          "booking.feature1": "Varje bokning sparas med gastuppgifter, antal personer, noteringar och skapad-tid.",
-          "booking.feature2": "Era interna verktyg kan hamta tillbaka bokningar som JSON fran samma endpoint.",
-          "booking.feature3": "Satt BOOKINGS_ADMIN_KEY innan produktion for att skydda bokningsflodet.",
-          "booking.security": "For lokala demos kan flodet vara oppet, men i produktion bor ni anvanda admin-nyckel och riktig databas.",
           "booking.loading": "Skickar bokning...",
           "booking.success": "Bokning mottagen. Referens: {reference}.",
-          "booking.error": "Det gick inte att spara bokningen. Forsok igen."
+          "booking.error": "Det gick inte att spara bokningen. Forsok igen.",
+          "vip.eyebrow": "Premium membership",
+          "vip.title": "VIP-klubb for prioriterade bokningar, specialevent och hospitality med hogre touch.",
+          "vip.lead": "Positionera restaurangen som ett varumarke gasten vill ha fortsatt tillgang till, inte bara boka en gang.",
+          "vip.point1": "Prioriterad tillgang till helger med hog efterfragan och privata kvallar",
+          "vip.point2": "Inbjudningar till tastinglanseringar, cocktail previews och hostade upplevelser",
+          "vip.point3": "En starkare anledning att komma tillbaka, rekommendera och uppgradera besoket",
+          "vip.cta": "Be om VIP-access",
+          "footer.sources": "Tripadvisor-sektionen anvander publika titlar, datum och betygskontext fran Club Del Mars Tripadvisor-listning. Google Maps ar inbaddad for riktig platskontext."
         }
       };
 
@@ -1164,6 +866,7 @@
       const bookingForm = document.querySelector("#booking-form");
       const bookingStatus = document.querySelector("#booking-status");
       const bookingDateInput = document.querySelector("#booking-date");
+      const revealNodes = document.querySelectorAll("[data-reveal]");
       let activeLanguage = "en";
 
       function getLocalDateString() {
@@ -1185,10 +888,8 @@
 
       function renderBookingStatus() {
         if (!bookingStatus) return;
-
         const statusKey = bookingStatus.dataset.statusKey || "booking.statusHint";
         const reference = bookingStatus.dataset.reference || "";
-
         bookingStatus.textContent = translate(statusKey, { reference });
       }
 
@@ -1225,15 +926,30 @@
         return "en";
       }
 
-      document.querySelectorAll("[data-photo-track]").forEach((track) => {
-        if (track.dataset.ready === "true") return;
-        const originalSet = track.querySelector(".photo-set");
-        if (!originalSet) return;
-        const clone = originalSet.cloneNode(true);
-        clone.setAttribute("aria-hidden", "true");
-        track.appendChild(clone);
-        track.dataset.ready = "true";
-      });
+      function setupReveal() {
+        if (!revealNodes.length) return;
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          revealNodes.forEach((node) => node.classList.add("is-visible"));
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            });
+          },
+          {
+            threshold: 0.16,
+            rootMargin: "0px 0px -40px 0px",
+          }
+        );
+
+        revealNodes.forEach((node) => observer.observe(node));
+      }
 
       languageButtons.forEach((button) => {
         button.addEventListener("click", () => applyLanguage(button.dataset.lang));
@@ -1248,6 +964,13 @@
           event.preventDefault();
 
           const formData = new FormData(bookingForm);
+          const vipRequested = formData.get("vip") === "on";
+          const noteFragments = [String(formData.get("notes") || "").trim()];
+
+          if (vipRequested) {
+            noteFragments.unshift("VIP reservation requested");
+          }
+
           const payload = {
             name: String(formData.get("name") || "").trim(),
             email: String(formData.get("email") || "").trim(),
@@ -1255,7 +978,7 @@
             date: String(formData.get("date") || "").trim(),
             time: String(formData.get("time") || "").trim(),
             guests: Number(formData.get("guests") || 0),
-            notes: String(formData.get("notes") || "").trim(),
+            notes: noteFragments.filter(Boolean).join(" | "),
             language: document.documentElement.lang || "en",
           };
 
@@ -1301,6 +1024,7 @@
         });
       }
 
+      setupReveal();
       applyLanguage(getPreferredLanguage());
     </script>
   </body>
