@@ -1,6 +1,9 @@
-const http = require("node:http");
-const fs = require("node:fs");
-const path = require("node:path");
+require("dotenv").config();
+
+const http = require("http");
+const fs = require("fs");
+const path = require("path");
+
 const { ensureBookingsStore, handleBookingsApi, createRequestUrl } = require("./lib/bookings-api");
 
 const HOST = "127.0.0.1";
