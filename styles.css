@@ -1755,3 +1755,382 @@ main {
     transform: none;
   }
 }
+
+body.nobu-theme {
+  --bg: #0e0e0f;
+  --paper: rgba(18, 18, 18, 0.9);
+  --paper-strong: #151515;
+  --ink: #f2eadf;
+  --ink-soft: #b4a89a;
+  --line: rgba(242, 234, 223, 0.1);
+  --sea: #b89a71;
+  --sea-deep: #7f6341;
+  --sea-soft: #dcc7a7;
+  --foam: #efe3d0;
+  --sun: #c9a779;
+  --coral: #7b5b53;
+  --leaf: #5c665c;
+  --sand: #1b1a18;
+  --berry: #685550;
+  --shadow: 0 34px 100px rgba(0, 0, 0, 0.45);
+  color-scheme: dark;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(201, 167, 121, 0.1), transparent 24%),
+    radial-gradient(circle at 84% 16%, rgba(255, 255, 255, 0.04), transparent 20%),
+    linear-gradient(180deg, #090909 0%, #111111 36%, #171615 100%);
+}
+
+body.nobu-theme::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 22%),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.02) 0,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 140px
+    );
+  opacity: 0.3;
+}
+
+body.nobu-theme::after {
+  display: none;
+}
+
+.nobu-theme .site-header,
+.nobu-theme .hero,
+.nobu-theme .snapshot,
+.nobu-theme .panel,
+.nobu-theme .review-card,
+.nobu-theme .menu-choice,
+.nobu-theme .snapshot-card,
+.nobu-theme .snapshot-quote,
+.nobu-theme .score-card,
+.nobu-theme .micro-card,
+.nobu-theme .booking-flow-card {
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.95), rgba(15, 15, 15, 0.94));
+  border-color: rgba(242, 234, 223, 0.08);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.nobu-theme .site-header {
+  background: rgba(11, 11, 11, 0.9);
+}
+
+.nobu-theme .hero,
+.nobu-theme .menu-choice,
+.nobu-theme .panel,
+.nobu-theme .review-card,
+.nobu-theme .snapshot-card,
+.nobu-theme .snapshot-quote {
+  position: relative;
+  overflow: hidden;
+}
+
+.nobu-theme .hero::before,
+.nobu-theme .menu-choice::before,
+.nobu-theme .panel::before,
+.nobu-theme .review-card::before,
+.nobu-theme .snapshot-card::before,
+.nobu-theme .snapshot-quote::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 28%),
+    linear-gradient(180deg, transparent 0%, rgba(201, 167, 121, 0.05) 100%);
+  pointer-events: none;
+}
+
+.nobu-theme .brand-word {
+  background: linear-gradient(180deg, #f2eadf 0%, #ddc8aa 42%, #b48f62 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.18);
+  text-shadow:
+    0.03em 0.03em 0 rgba(48, 35, 22, 0.2),
+    0.06em 0.06em 0 rgba(0, 0, 0, 0.12);
+}
+
+.nobu-theme .brand-palm {
+  filter: drop-shadow(4px 4px 0 rgba(34, 25, 17, 0.32));
+}
+
+.nobu-theme .brand-palm .palm-shadow {
+  fill: rgba(64, 45, 31, 0.45);
+}
+
+.nobu-theme .brand-palm .palm-main {
+  fill: #b58b62;
+}
+
+.nobu-theme .brand-tagline,
+.nobu-theme .lead,
+.nobu-theme .menu-intro,
+.nobu-theme .menu-choice-copy,
+.nobu-theme .review-body,
+.nobu-theme .booking-intro,
+.nobu-theme .booking-system-copy,
+.nobu-theme .booking-security,
+.nobu-theme .visit-copy p,
+.nobu-theme .visit-copy small,
+.nobu-theme .snapshot-quote span,
+.nobu-theme .score-meta,
+.nobu-theme .review-top p {
+  color: rgba(242, 234, 223, 0.72);
+}
+
+.nobu-theme .eyebrow,
+.nobu-theme .snapshot-label,
+.nobu-theme .booking-flow-label,
+.nobu-theme .menu-choice-pill,
+.nobu-theme .menu-choice-cta {
+  color: #d9bd96;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nobu-theme .site-nav a,
+.nobu-theme .review-footer a,
+.nobu-theme .contact-links a {
+  color: var(--ink);
+  text-decoration-color: rgba(242, 234, 223, 0.2);
+}
+
+.nobu-theme .language-switcher {
+  border-color: rgba(242, 234, 223, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: none;
+}
+
+.nobu-theme .language-button {
+  color: rgba(242, 234, 223, 0.64);
+}
+
+.nobu-theme .language-button:hover,
+.nobu-theme .language-button:focus-visible,
+.nobu-theme .language-button[aria-pressed="true"] {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ink);
+}
+
+.nobu-theme .header-cta,
+.nobu-theme .button-primary {
+  color: #111;
+  border-color: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(135deg, #d8c09d 0%, #b59163 55%, #8b6a44 100%);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.nobu-theme .button-secondary {
+  color: var(--ink);
+  border-color: rgba(242, 234, 223, 0.16);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.nobu-theme .button-secondary:hover,
+.nobu-theme .header-cta:hover,
+.nobu-theme .button-primary:hover {
+  transform: translateY(-1px);
+}
+
+.nobu-theme .hero h1,
+.nobu-theme .section-heading h2,
+.nobu-theme .booking-panel h3,
+.nobu-theme .booking-system-panel h3,
+.nobu-theme .review-card h3,
+.nobu-theme .menu-choice h3,
+.nobu-theme .visit-copy h3 {
+  color: var(--ink);
+  letter-spacing: -0.04em;
+}
+
+.nobu-theme .vibe-pills span,
+.nobu-theme .hero-notes li,
+.nobu-theme .tag-cloud span,
+.nobu-theme .mini-scores span,
+.nobu-theme .shot,
+.nobu-theme .menu-choice-pill,
+.nobu-theme .menu-choice-cta {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(242, 234, 223, 0.08);
+  color: #e4cfb1;
+  box-shadow: none;
+}
+
+.nobu-theme .hero-notes li::before {
+  background: #c19a69;
+  box-shadow: none;
+}
+
+.nobu-theme .hero-decoration,
+.nobu-theme .lagoon-band,
+.nobu-theme .sun-orb,
+.nobu-theme .leaf-shadow {
+  display: none;
+}
+
+.nobu-theme .score-card,
+.nobu-theme .micro-card,
+.nobu-theme .snapshot-card,
+.nobu-theme .snapshot-quote,
+.nobu-theme .booking-flow-card {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.nobu-theme .score-stack strong,
+.nobu-theme .panel-score strong {
+  color: var(--ink);
+}
+
+.nobu-theme .dot-rating span {
+  background: linear-gradient(180deg, #d9bf99 0%, #8b6b45 100%);
+}
+
+.nobu-theme .meter,
+.nobu-theme .meter.light {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.nobu-theme .meter span {
+  background: linear-gradient(90deg, #e0c9a8 0%, #8b6a44 100%);
+}
+
+.nobu-theme .photo-card,
+.nobu-theme .photo-card:nth-child(5n + 1),
+.nobu-theme .photo-card:nth-child(5n + 2),
+.nobu-theme .photo-card:nth-child(5n + 3),
+.nobu-theme .photo-card:nth-child(5n + 4) {
+  background: rgba(16, 16, 16, 0.95);
+  border: 1px solid rgba(242, 234, 223, 0.08);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+  transform: none;
+}
+
+.nobu-theme .photo-card::before {
+  display: none;
+}
+
+.nobu-theme .photo-card:hover {
+  transform: translateY(-4px);
+}
+
+.nobu-theme .photo-card img {
+  border-radius: 16px;
+  filter: saturate(0.82) brightness(0.9) contrast(0.96);
+}
+
+.nobu-theme .menu-choice,
+.nobu-theme .menu-choice-food,
+.nobu-theme .menu-choice-drinks,
+.nobu-theme .review-card,
+.nobu-theme .review-card:nth-child(2),
+.nobu-theme .review-card:nth-child(3),
+.nobu-theme .review-card:nth-child(4),
+.nobu-theme .review-card-featured,
+.nobu-theme .panel,
+.nobu-theme .opening-hours,
+.nobu-theme .booking-panel,
+.nobu-theme .booking-system-panel {
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.96), rgba(14, 14, 14, 0.96));
+}
+
+.nobu-theme .menu-choice::after,
+.nobu-theme .menu-choice-food::after,
+.nobu-theme .menu-choice-drinks::after,
+.nobu-theme .review-card-featured::after {
+  background: radial-gradient(circle at top right, rgba(201, 167, 121, 0.12), transparent 58%);
+  opacity: 1;
+}
+
+.nobu-theme .quote-mark {
+  color: rgba(201, 167, 121, 0.38);
+}
+
+.nobu-theme .avatar,
+.nobu-theme .avatar-sunrise,
+.nobu-theme .avatar-coral,
+.nobu-theme .avatar-seafoam,
+.nobu-theme .avatar-gold {
+  background: linear-gradient(135deg, #5f4a34 0%, #26221e 100%);
+  color: #f4ebde;
+  border: 1px solid rgba(242, 234, 223, 0.12);
+}
+
+.nobu-theme .map-card {
+  background:
+    linear-gradient(180deg, rgba(22, 22, 22, 0.92), rgba(13, 13, 13, 0.98)),
+    linear-gradient(135deg, rgba(201, 167, 121, 0.06), transparent 56%);
+  border: 1px solid rgba(242, 234, 223, 0.08);
+}
+
+.nobu-theme .map-water {
+  background: linear-gradient(180deg, rgba(142, 112, 76, 0.14), rgba(79, 63, 45, 0.24));
+}
+
+.nobu-theme .map-pin {
+  background: linear-gradient(135deg, #d8c09d 0%, #a57d52 100%);
+  color: #16120d;
+}
+
+.nobu-theme .opening-hours li,
+.nobu-theme .contact-links a,
+.nobu-theme .feature-list li,
+.nobu-theme .distribution span,
+.nobu-theme .attribute-list span {
+  color: rgba(242, 234, 223, 0.78);
+}
+
+.nobu-theme .field span,
+.nobu-theme .form-grid label span {
+  color: var(--ink);
+}
+
+.nobu-theme input,
+.nobu-theme select,
+.nobu-theme textarea {
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(242, 234, 223, 0.1);
+  box-shadow: none;
+}
+
+.nobu-theme input::placeholder,
+.nobu-theme textarea::placeholder {
+  color: rgba(242, 234, 223, 0.4);
+}
+
+.nobu-theme input:focus,
+.nobu-theme select:focus,
+.nobu-theme textarea:focus {
+  border-color: rgba(216, 192, 157, 0.38);
+  box-shadow: 0 0 0 4px rgba(181, 145, 99, 0.12);
+  outline: none;
+}
+
+.nobu-theme .booking-status {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(242, 234, 223, 0.08);
+  color: rgba(242, 234, 223, 0.68);
+}
+
+.nobu-theme .booking-status[data-state="loading"] {
+  background: rgba(130, 104, 72, 0.16);
+  border-color: rgba(201, 167, 121, 0.18);
+  color: #e6d5bd;
+}
+
+.nobu-theme .booking-status[data-state="success"] {
+  background: rgba(77, 99, 81, 0.2);
+  border-color: rgba(123, 156, 130, 0.24);
+  color: #dbe8db;
+}
+
+.nobu-theme .booking-status[data-state="error"] {
+  background: rgba(112, 67, 58, 0.22);
+  border-color: rgba(167, 106, 94, 0.24);
+  color: #f0d3ca;
+}
