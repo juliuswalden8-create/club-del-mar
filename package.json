@@ -1,0 +1,10 @@
+{
+  "name": "club-del-mar-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static local site for Club Del Mar",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
