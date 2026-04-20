@@ -53,7 +53,7 @@
             <button class="language-button" type="button" data-lang="sv" aria-pressed="false">SV</button>
           </div>
 
-          <a class="header-cta" href="#visit" data-i18n="cta.book">Book a table</a>
+          <a class="header-cta" href="#booking" data-i18n="cta.book">Book a table</a>
         </div>
       </header>
 
@@ -234,100 +234,56 @@
 
         <section class="menu-section" id="menu">
           <div class="section-heading section-heading-wide">
-            <p class="eyebrow" data-i18n="menu.eyebrow">Typed Menu</p>
-            <h2 data-i18n="menu.title">A clean menu preview on the page, with a full text-only PDF for browsing or printing.</h2>
+            <p class="eyebrow" data-i18n="menu.eyebrow">Choose a menu</p>
+            <h2 data-i18n="menu.title">Skip the homepage preview and open either the food menu or the drinks menu directly.</h2>
           </div>
 
-          <div class="menu-layout">
-            <article class="panel menu-copy">
-              <p class="eyebrow" data-i18n="menu.previewEyebrow">Menu Preview</p>
-              <h3 data-i18n="menu.previewTitle">Food and drinks recreated in text, without embedding the menu photos.</h3>
-              <p class="menu-copy-text" data-i18n="menu.previewText">
-                I rebuilt the menu into a readable layout so it feels like part
-                of the brand site, and the full version opens as a separate PDF.
+          <p class="menu-intro" data-i18n="menu.lead">
+            Use the two menu doors below to open separate text-based PDFs for
+            food and drinks.
+          </p>
+
+          <div class="menu-selector">
+            <a class="menu-choice menu-choice-food" href="./club-del-mar-food-menu.pdf" target="_blank" rel="noopener">
+              <div class="menu-choice-top">
+                <p class="eyebrow" data-i18n="menu.foodEyebrow">Food menu</p>
+                <span class="menu-choice-pill">PDF</span>
+              </div>
+
+              <h3 data-i18n="menu.foodTitle">Breakfast, brunch, bowls, burgers, pizza and sweets.</h3>
+              <p class="menu-choice-copy" data-i18n="menu.foodLead">
+                Open the food menu in a separate PDF without showing the full
+                preview on the homepage.
               </p>
 
-              <div class="menu-actions">
-                <a class="button button-primary" href="./club-del-mar-menu.pdf" target="_blank" rel="noopener" data-i18n="menu.openPdf">Open menu PDF</a>
-                <a class="button button-secondary" href="#visit" data-i18n="cta.book">Book a table</a>
-              </div>
-
-              <ul class="feature-list">
-                <li data-i18n="menu.feature1">Typed from your current menu references, not image embeds</li>
-                <li data-i18n="menu.feature2">Includes both food favourites and bar highlights</li>
-                <li data-i18n="menu.feature3">Designed to open as a clean separate PDF document</li>
+              <ul class="feature-list feature-list-tight">
+                <li data-i18n="menu.foodFeature1">Breakfasts, eggs and toasts</li>
+                <li data-i18n="menu.foodFeature2">Bowls, salads and sandwiches</li>
+                <li data-i18n="menu.foodFeature3">Burgers, pizza, vegan dishes and desserts</li>
               </ul>
-            </article>
 
-            <a class="menu-sheet" href="./club-del-mar-menu.pdf" target="_blank" rel="noopener">
-              <div class="menu-sheet-top">
-                <div>
-                  <p class="eyebrow" data-i18n="menu.sheetEyebrow">Club Del Mar Menu</p>
-                  <h3 data-i18n="menu.sheetTitle">Breakfasts, bowls, burgers, cocktails and beach-club drinks.</h3>
-                </div>
-                <span class="menu-open-pill" data-i18n="menu.openPdfShort">Open PDF</span>
+              <span class="menu-choice-cta" data-i18n="menu.foodCta">Open food PDF</span>
+            </a>
+
+            <a class="menu-choice menu-choice-drinks" href="./club-del-mar-drinks-menu.pdf" target="_blank" rel="noopener">
+              <div class="menu-choice-top">
+                <p class="eyebrow" data-i18n="menu.drinksEyebrow">Drinks menu</p>
+                <span class="menu-choice-pill">PDF</span>
               </div>
 
-              <div class="menu-sheet-columns">
-                <div class="menu-sheet-column">
-                  <h4 data-i18n="menu.col1h1">Breakfasts</h4>
-                  <ul>
-                    <li><span data-i18n="menu.item.englishBreakfast">English breakfast</span><strong>8,50</strong></li>
-                    <li><span data-i18n="menu.item.miniBrunch">Mini brunch</span><strong>9,20</strong></li>
-                    <li><span data-i18n="menu.item.moroccanBreakfast">Moroccan breakfast</span><strong>6,90</strong></li>
-                    <li><span data-i18n="menu.item.vitalityBreakfast">Vitality breakfast</span><strong>7,90</strong></li>
-                  </ul>
+              <h3 data-i18n="menu.drinksTitle">Cocktails, spirits, soft drinks, milkshakes and smoothies.</h3>
+              <p class="menu-choice-copy" data-i18n="menu.drinksLead">
+                Open the drinks menu in its own PDF for bar service, terrace
+                orders and cocktail browsing.
+              </p>
 
-                  <h4 data-i18n="menu.col1h2">Toasts</h4>
-                  <ul>
-                    <li><span data-i18n="menu.item.avocadoToasts">Avocado toasts</span><strong>6,00</strong></li>
-                    <li><span data-i18n="menu.item.salmonToasts">Salmon toasts</span><strong>7,00</strong></li>
-                    <li><span data-i18n="menu.item.italianToasts">Italian toasts</span><strong>6,50</strong></li>
-                    <li><span data-i18n="menu.item.omegaToasts">Omega toasts</span><strong>7,00</strong></li>
-                  </ul>
-                </div>
+              <ul class="feature-list feature-list-tight">
+                <li data-i18n="menu.drinksFeature1">Signature and classic cocktails</li>
+                <li data-i18n="menu.drinksFeature2">Rum, whisky, gin, vodka and liqueurs</li>
+                <li data-i18n="menu.drinksFeature3">Alcohol-free drinks, juices and smoothies</li>
+              </ul>
 
-                <div class="menu-sheet-column">
-                  <h4 data-i18n="menu.col2h1">Bowls & Salads</h4>
-                  <ul>
-                    <li><span data-i18n="menu.item.alohaBowl">Aloha bowl</span><strong>11,90</strong></li>
-                    <li><span data-i18n="menu.item.japaneseBowl">Japanese bowl</span><strong>11,70</strong></li>
-                    <li><span data-i18n="menu.item.caesarSalad">Caesar salad</span><strong>10,50</strong></li>
-                    <li><span data-i18n="menu.item.balboaSalad">Balboa salad</span><strong>11,90</strong></li>
-                  </ul>
-
-                  <h4 data-i18n="menu.col2h2">Favourites</h4>
-                  <ul>
-                    <li><span data-i18n="menu.item.miamiBurger">Miami burger</span><strong>10,90</strong></li>
-                    <li><span data-i18n="menu.item.clubRoyal">Club sandwich Royal</span><strong>10,50</strong></li>
-                    <li><span data-i18n="menu.item.veganBurger">Vegan burger</span><strong>10,90</strong></li>
-                    <li><span data-i18n="menu.item.pizzaReina">Pizza Reina</span><strong>9,70</strong></li>
-                  </ul>
-                </div>
-
-                <div class="menu-sheet-column">
-                  <h4 data-i18n="menu.col3h1">Bar Menu</h4>
-                  <ul>
-                    <li><span data-i18n="menu.item.mojito">Mojito</span><strong>7,50</strong></li>
-                    <li><span data-i18n="menu.item.pinaColada">Pina colada</span><strong>7,50</strong></li>
-                    <li><span data-i18n="menu.item.aperol">Aperol Spritz</span><strong>7,00</strong></li>
-                    <li><span data-i18n="menu.item.espressoMartini">Espresso Martini</span><strong>7,50</strong></li>
-                  </ul>
-
-                  <h4 data-i18n="menu.col3h2">Alcohol-Free</h4>
-                  <ul>
-                    <li><span data-i18n="menu.item.virginMojito">Virgin mojito</span><strong>5,90</strong></li>
-                    <li><span data-i18n="menu.item.virginPinaColada">Virgin pina colada</span><strong>5,90</strong></li>
-                    <li><span data-i18n="menu.item.yellowSmoothie">Yellow smoothie</span><strong>4,50</strong></li>
-                    <li><span data-i18n="menu.item.milkshake">Club del Mar milkshake</span><strong>4,90</strong></li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="menu-sheet-footer">
-                <span data-i18n="menu.footerLeft">Food menu + drinks menu</span>
-                <strong data-i18n="menu.footerRight">2-page typed PDF</strong>
-              </div>
+              <span class="menu-choice-cta" data-i18n="menu.drinksCta">Open drinks PDF</span>
             </a>
           </div>
         </section>
@@ -558,6 +514,120 @@
               </ul>
             </article>
           </div>
+
+          <div class="booking-layout" id="booking">
+            <article class="panel booking-panel">
+              <p class="eyebrow" data-i18n="booking.eyebrow">Reservation system</p>
+              <h3 data-i18n="booking.title">Book a table and send it straight into the backend.</h3>
+              <p class="booking-intro" data-i18n="booking.lead">
+                Each booking is saved as structured data so your internal system
+                can read it back from the reservation feed.
+              </p>
+
+              <form class="booking-form" id="booking-form">
+                <div class="form-grid">
+                  <label class="field">
+                    <span data-i18n="booking.name">Name</span>
+                    <input type="text" name="name" autocomplete="name" required />
+                  </label>
+
+                  <label class="field">
+                    <span data-i18n="booking.email">Email</span>
+                    <input type="email" name="email" autocomplete="email" required />
+                  </label>
+
+                  <label class="field">
+                    <span data-i18n="booking.phone">Phone</span>
+                    <input type="tel" name="phone" autocomplete="tel" required />
+                  </label>
+
+                  <label class="field">
+                    <span data-i18n="booking.date">Date</span>
+                    <input type="date" name="date" id="booking-date" required />
+                  </label>
+
+                  <label class="field">
+                    <span data-i18n="booking.time">Time</span>
+                    <input type="time" name="time" required />
+                  </label>
+
+                  <label class="field">
+                    <span data-i18n="booking.guests">Guests</span>
+                    <select name="guests" required>
+                      <option value="" selected disabled data-i18n="booking.selectGuests">Select</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                  </label>
+
+                  <label class="field field-full">
+                    <span data-i18n="booking.notes">Notes</span>
+                    <textarea
+                      name="notes"
+                      rows="4"
+                      maxlength="500"
+                    ></textarea>
+                  </label>
+                </div>
+
+                <div class="booking-actions">
+                  <button class="button button-primary" type="submit" data-i18n="booking.submit">Send booking</button>
+                  <p
+                    class="booking-status"
+                    id="booking-status"
+                    role="status"
+                    aria-live="polite"
+                    data-i18n="booking.statusHint"
+                    data-status-key="booking.statusHint"
+                  >
+                    Bookings are saved to the backend and available from /api/bookings.
+                  </p>
+                </div>
+              </form>
+            </article>
+
+            <article class="panel booking-system-panel">
+              <p class="eyebrow" data-i18n="booking.backendEyebrow">Backend handoff</p>
+              <h3 data-i18n="booking.backendTitle">The reservation lands in a JSON feed your data system can read.</h3>
+              <p class="booking-system-copy" data-i18n="booking.backendLead">
+                The form posts into the backend, each reservation gets a
+                reference and timestamp, and the feed can be protected with an
+                admin key when you go live.
+              </p>
+
+              <div class="booking-flow" aria-label="Booking API flow">
+                <div class="booking-flow-card">
+                  <span class="booking-flow-label">POST</span>
+                  <strong>/api/bookings</strong>
+                </div>
+                <div class="booking-flow-card">
+                  <span class="booking-flow-label">GET</span>
+                  <strong>/api/bookings</strong>
+                </div>
+              </div>
+
+              <ul class="feature-list">
+                <li data-i18n="booking.feature1">Every reservation is stored with guest details, party size, notes and a created timestamp.</li>
+                <li data-i18n="booking.feature2">Your internal tools can fetch bookings back as JSON from the same backend endpoint.</li>
+                <li data-i18n="booking.feature3">Set BOOKINGS_ADMIN_KEY before production to protect the booking feed.</li>
+              </ul>
+
+              <p class="booking-security" data-i18n="booking.security">
+                For local demos the feed can stay open, but production should
+                use an admin key and a real database.
+              </p>
+            </article>
+          </div>
         </section>
       </main>
     </div>
@@ -600,8 +670,23 @@
           "snapshot.tag6": "Vegan options",
           "snapshot.quote": "A bright, breezy place with standout service, colorful food and coffee that feels made for slow mornings by the sea.",
           "snapshot.credit": "Inspired by guest sentiment from your reference material",
-          "menu.eyebrow": "Typed Menu",
-          "menu.title": "A clean menu preview on the page, with a full text-only PDF for browsing or printing.",
+          "menu.eyebrow": "Choose a menu",
+          "menu.title": "Skip the homepage preview and open either the food menu or the drinks menu directly.",
+          "menu.lead": "Use the two menu doors below to open separate text-based PDFs for food and drinks.",
+          "menu.foodEyebrow": "Food menu",
+          "menu.foodTitle": "Breakfast, brunch, bowls, burgers, pizza and sweets.",
+          "menu.foodLead": "Open the food menu in a separate PDF without showing the full preview on the homepage.",
+          "menu.foodFeature1": "Breakfasts, eggs and toasts",
+          "menu.foodFeature2": "Bowls, salads and sandwiches",
+          "menu.foodFeature3": "Burgers, pizza, vegan dishes and desserts",
+          "menu.foodCta": "Open food PDF",
+          "menu.drinksEyebrow": "Drinks menu",
+          "menu.drinksTitle": "Cocktails, spirits, soft drinks, milkshakes and smoothies.",
+          "menu.drinksLead": "Open the drinks menu in its own PDF for bar service, terrace orders and cocktail browsing.",
+          "menu.drinksFeature1": "Signature and classic cocktails",
+          "menu.drinksFeature2": "Rum, whisky, gin, vodka and liqueurs",
+          "menu.drinksFeature3": "Alcohol-free drinks, juices and smoothies",
+          "menu.drinksCta": "Open drinks PDF",
           "menu.previewEyebrow": "Menu Preview",
           "menu.previewTitle": "Food and drinks recreated in text, without embedding the menu photos.",
           "menu.previewText": "I rebuilt the menu into a readable layout so it feels like part of the brand site, and the full version opens as a separate PDF.",
@@ -697,7 +782,30 @@
           "visit.dayFriday": "Friday",
           "visit.daySaturday": "Saturday",
           "visit.daySunday": "Sunday",
-          "visit.closed": "Closed"
+          "visit.closed": "Closed",
+          "booking.eyebrow": "Reservation system",
+          "booking.title": "Book a table and send it straight into the backend.",
+          "booking.lead": "Each booking is saved as structured data so your internal system can read it back from the reservation feed.",
+          "booking.name": "Name",
+          "booking.email": "Email",
+          "booking.phone": "Phone",
+          "booking.date": "Date",
+          "booking.time": "Time",
+          "booking.guests": "Guests",
+          "booking.selectGuests": "Select",
+          "booking.notes": "Notes",
+          "booking.submit": "Send booking",
+          "booking.statusHint": "Bookings are saved to the backend and available from /api/bookings.",
+          "booking.backendEyebrow": "Backend handoff",
+          "booking.backendTitle": "The reservation lands in a JSON feed your data system can read.",
+          "booking.backendLead": "The form posts into the backend, each reservation gets a reference and timestamp, and the feed can be protected with an admin key when you go live.",
+          "booking.feature1": "Every reservation is stored with guest details, party size, notes and a created timestamp.",
+          "booking.feature2": "Your internal tools can fetch bookings back as JSON from the same backend endpoint.",
+          "booking.feature3": "Set BOOKINGS_ADMIN_KEY before production to protect the booking feed.",
+          "booking.security": "For local demos the feed can stay open, but production should use an admin key and a real database.",
+          "booking.loading": "Sending booking...",
+          "booking.success": "Booking received. Reference: {reference}.",
+          "booking.error": "The booking could not be saved. Please try again."
         },
         es: {
           "meta.title": "Club Del Mar | Pagina de Resenas",
@@ -736,8 +844,23 @@
           "snapshot.tag6": "Opciones veganas",
           "snapshot.quote": "Un lugar luminoso y fresco, con un servicio excelente, comida colorida y cafe perfecto para las mananas junto al mar.",
           "snapshot.credit": "Inspirado en el sentimiento de los clientes de tu material de referencia",
-          "menu.eyebrow": "Menu escrito",
-          "menu.title": "Una vista previa limpia del menu en la pagina, con un PDF completo en texto para leer o imprimir.",
+          "menu.eyebrow": "Elige menu",
+          "menu.title": "Sin preview en la portada: abre directamente el menu de comida o el de bebidas.",
+          "menu.lead": "Usa las dos columnas de abajo para abrir PDFs separados de comida y bebidas.",
+          "menu.foodEyebrow": "Menu de comida",
+          "menu.foodTitle": "Desayunos, brunch, bowls, hamburguesas, pizza y postres.",
+          "menu.foodLead": "Abre el menu de comida en un PDF separado sin mostrar toda la vista previa en la portada.",
+          "menu.foodFeature1": "Desayunos, huevos y tostadas",
+          "menu.foodFeature2": "Bowls, ensaladas y sandwiches",
+          "menu.foodFeature3": "Hamburguesas, pizza, platos veganos y postres",
+          "menu.foodCta": "Abrir PDF de comida",
+          "menu.drinksEyebrow": "Menu de bebidas",
+          "menu.drinksTitle": "Cocteles, destilados, refrescos, batidos y smoothies.",
+          "menu.drinksLead": "Abre el menu de bebidas en su propio PDF para barra, terraza y cocteles.",
+          "menu.drinksFeature1": "Cocteles de autor y clasicos",
+          "menu.drinksFeature2": "Ron, whisky, ginebra, vodka y licores",
+          "menu.drinksFeature3": "Bebidas sin alcohol, zumos y smoothies",
+          "menu.drinksCta": "Abrir PDF de bebidas",
           "menu.previewEyebrow": "Vista previa del menu",
           "menu.previewTitle": "Comida y bebidas recreadas en texto, sin incrustar las fotos del menu.",
           "menu.previewText": "Rehice el menu en un formato legible para que se sienta como parte de la web de marca, y la version completa se abre como PDF independiente.",
@@ -833,7 +956,30 @@
           "visit.dayFriday": "Viernes",
           "visit.daySaturday": "Sabado",
           "visit.daySunday": "Domingo",
-          "visit.closed": "Cerrado"
+          "visit.closed": "Cerrado",
+          "booking.eyebrow": "Sistema de reservas",
+          "booking.title": "Reserva una mesa y enviala directamente al backend.",
+          "booking.lead": "Cada reserva se guarda como dato estructurado para que vuestro sistema interno pueda leerla desde el feed de reservas.",
+          "booking.name": "Nombre",
+          "booking.email": "Correo",
+          "booking.phone": "Telefono",
+          "booking.date": "Fecha",
+          "booking.time": "Hora",
+          "booking.guests": "Comensales",
+          "booking.selectGuests": "Selecciona",
+          "booking.notes": "Notas",
+          "booking.submit": "Enviar reserva",
+          "booking.statusHint": "Las reservas se guardan en el backend y estan disponibles desde /api/bookings.",
+          "booking.backendEyebrow": "Entrega al backend",
+          "booking.backendTitle": "La reserva llega a un feed JSON que vuestro sistema puede leer.",
+          "booking.backendLead": "El formulario envia la reserva al backend, cada solicitud recibe una referencia y una marca temporal, y el feed puede protegerse con una clave de administrador cuando salga a produccion.",
+          "booking.feature1": "Cada reserva se guarda con los datos del cliente, numero de personas, notas y fecha de creacion.",
+          "booking.feature2": "Tus herramientas internas pueden recuperar las reservas como JSON desde el mismo endpoint.",
+          "booking.feature3": "Configura BOOKINGS_ADMIN_KEY antes de produccion para proteger el feed de reservas.",
+          "booking.security": "Para demos locales el feed puede quedar abierto, pero en produccion deberia usar una clave de administrador y una base de datos real.",
+          "booking.loading": "Enviando reserva...",
+          "booking.success": "Reserva recibida. Referencia: {reference}.",
+          "booking.error": "No se pudo guardar la reserva. Intentalo de nuevo."
         },
         sv: {
           "meta.title": "Club Del Mar | Recensionssida",
@@ -872,8 +1018,23 @@
           "snapshot.tag6": "Veganska alternativ",
           "snapshot.quote": "En ljus och avslappnad plats med standout-service, fargglad mat och kaffe som passar for langa morgnar vid havet.",
           "snapshot.credit": "Inspirerat av gastkanslan i ditt referensmaterial",
-          "menu.eyebrow": "Skriven meny",
-          "menu.title": "En ren menyforhandsvisning pa sidan, med en fullstandig textbaserad PDF att lasa eller skriva ut.",
+          "menu.eyebrow": "Valj meny",
+          "menu.title": "Skippa preview pa hemsidan och oppna antingen matmenyn eller dryckesmenyn direkt.",
+          "menu.lead": "Anvand de tva menykolumnerna nedan for att oppna separata textbaserade PDF:er for mat och dryck.",
+          "menu.foodEyebrow": "Matmeny",
+          "menu.foodTitle": "Frukost, brunch, bowls, burgare, pizza och desserter.",
+          "menu.foodLead": "Oppna matmenyn som en separat PDF utan att visa hela previewn pa hemsidan.",
+          "menu.foodFeature1": "Frukostar, agg och toast",
+          "menu.foodFeature2": "Bowls, sallader och sandwiches",
+          "menu.foodFeature3": "Burgare, pizza, vegoratter och desserter",
+          "menu.foodCta": "Oppna mat-PDF",
+          "menu.drinksEyebrow": "Dryckesmeny",
+          "menu.drinksTitle": "Cocktails, sprit, lask, milkshakes och smoothies.",
+          "menu.drinksLead": "Oppna dryckesmenyn som en egen PDF for barservice, terrassbestallningar och cocktailval.",
+          "menu.drinksFeature1": "Signaturcocktails och klassiker",
+          "menu.drinksFeature2": "Rom, whisky, gin, vodka och likorer",
+          "menu.drinksFeature3": "Alkoholfria drinkar, juicer och smoothies",
+          "menu.drinksCta": "Oppna dryckes-PDF",
           "menu.previewEyebrow": "Menyforhandsvisning",
           "menu.previewTitle": "Mat och dryck atergivna i text, utan att anvanda menybilderna.",
           "menu.previewText": "Jag byggde om menyn till ett mer lasbart format sa att den kanns som en naturlig del av varumarkessidan, och hela versionen oppnas som en separat PDF.",
@@ -969,16 +1130,70 @@
           "visit.dayFriday": "Fredag",
           "visit.daySaturday": "Lordag",
           "visit.daySunday": "Sondag",
-          "visit.closed": "Stangt"
+          "visit.closed": "Stangt",
+          "booking.eyebrow": "Bokningssystem",
+          "booking.title": "Boka ett bord och skicka det direkt in i backend.",
+          "booking.lead": "Varje bokning sparas som strukturerad data sa att ert interna system kan lasa tillbaka den fran bokningsflodet.",
+          "booking.name": "Namn",
+          "booking.email": "E-post",
+          "booking.phone": "Telefon",
+          "booking.date": "Datum",
+          "booking.time": "Tid",
+          "booking.guests": "Antal gaster",
+          "booking.selectGuests": "Valj",
+          "booking.notes": "Noteringar",
+          "booking.submit": "Skicka bokning",
+          "booking.statusHint": "Bokningar sparas i backend och finns tillgangliga via /api/bookings.",
+          "booking.backendEyebrow": "Backend-flode",
+          "booking.backendTitle": "Bokningen hamnar i ett JSON-flode som ert datasystem kan lasa.",
+          "booking.backendLead": "Formularet postar till backend, varje bokning far en referens och tidsstampel, och flodet kan skyddas med en admin-nyckel nar ni gar live.",
+          "booking.feature1": "Varje bokning sparas med gastuppgifter, antal personer, noteringar och skapad-tid.",
+          "booking.feature2": "Era interna verktyg kan hamta tillbaka bokningar som JSON fran samma endpoint.",
+          "booking.feature3": "Satt BOOKINGS_ADMIN_KEY innan produktion for att skydda bokningsflodet.",
+          "booking.security": "For lokala demos kan flodet vara oppet, men i produktion bor ni anvanda admin-nyckel och riktig databas.",
+          "booking.loading": "Skickar bokning...",
+          "booking.success": "Bokning mottagen. Referens: {reference}.",
+          "booking.error": "Det gick inte att spara bokningen. Forsok igen."
         }
       };
 
       const supportedLanguages = ["en", "es", "sv"];
       const translationNodes = document.querySelectorAll("[data-i18n]");
       const languageButtons = document.querySelectorAll(".language-button");
+      const bookingForm = document.querySelector("#booking-form");
+      const bookingStatus = document.querySelector("#booking-status");
+      const bookingDateInput = document.querySelector("#booking-date");
+      let activeLanguage = "en";
+
+      function getLocalDateString() {
+        const now = new Date();
+        const localNow = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+        return localNow.toISOString().split("T")[0];
+      }
+
+      function translate(key, replacements = {}) {
+        const dictionary = translations[activeLanguage] || translations.en;
+        let output = dictionary[key] || translations.en[key] || key;
+
+        Object.entries(replacements).forEach(([name, value]) => {
+          output = output.replaceAll(`{${name}}`, value);
+        });
+
+        return output;
+      }
+
+      function renderBookingStatus() {
+        if (!bookingStatus) return;
+
+        const statusKey = bookingStatus.dataset.statusKey || "booking.statusHint";
+        const reference = bookingStatus.dataset.reference || "";
+
+        bookingStatus.textContent = translate(statusKey, { reference });
+      }
 
       function applyLanguage(lang) {
         const dictionary = translations[lang] || translations.en;
+        activeLanguage = lang;
 
         translationNodes.forEach((node) => {
           const key = node.dataset.i18n;
@@ -995,6 +1210,8 @@
           button.setAttribute("aria-pressed", String(active));
           button.classList.toggle("is-active", active);
         });
+
+        renderBookingStatus();
       }
 
       function getPreferredLanguage() {
@@ -1020,6 +1237,68 @@
       languageButtons.forEach((button) => {
         button.addEventListener("click", () => applyLanguage(button.dataset.lang));
       });
+
+      if (bookingDateInput) {
+        bookingDateInput.min = getLocalDateString();
+      }
+
+      if (bookingForm && bookingStatus) {
+        bookingForm.addEventListener("submit", async (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(bookingForm);
+          const payload = {
+            name: String(formData.get("name") || "").trim(),
+            email: String(formData.get("email") || "").trim(),
+            phone: String(formData.get("phone") || "").trim(),
+            date: String(formData.get("date") || "").trim(),
+            time: String(formData.get("time") || "").trim(),
+            guests: Number(formData.get("guests") || 0),
+            notes: String(formData.get("notes") || "").trim(),
+            language: document.documentElement.lang || "en",
+          };
+
+          bookingStatus.dataset.statusKey = "booking.loading";
+          bookingStatus.dataset.reference = "";
+          bookingStatus.dataset.state = "loading";
+          renderBookingStatus();
+
+          try {
+            const response = await fetch("/api/bookings", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(payload),
+            });
+
+            const result = await response.json().catch(() => ({}));
+
+            if (!response.ok) {
+              throw new Error(result.error || "booking_error");
+            }
+
+            bookingForm.reset();
+
+            if (bookingDateInput) {
+              bookingDateInput.min = getLocalDateString();
+            }
+
+            bookingStatus.dataset.statusKey = "booking.success";
+            bookingStatus.dataset.reference = result.booking?.reference || "";
+            bookingStatus.dataset.state = "success";
+            renderBookingStatus();
+          } catch (error) {
+            bookingStatus.dataset.statusKey = "booking.error";
+            bookingStatus.dataset.reference = "";
+            bookingStatus.dataset.state = "error";
+            bookingStatus.textContent =
+              error instanceof Error && error.message !== "booking_error"
+                ? error.message
+                : translate("booking.error");
+          }
+        });
+      }
 
       applyLanguage(getPreferredLanguage());
     </script>

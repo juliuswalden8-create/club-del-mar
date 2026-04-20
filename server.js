@@ -1,6 +1,7 @@
 const http = require("node:http");
 const fs = require("node:fs");
 const path = require("node:path");
+const { ensureBookingsStore, handleBookingsApi, createRequestUrl } = require("./lib/bookings-api");
 
 const HOST = "127.0.0.1";
 const PORT = Number(process.env.PORT || 3000);
@@ -38,32 +39,51 @@ function sendFile(filePath, response) {
   });
 }
 
-const server = http.createServer((request, response) => {
-  const urlPath = request.url === "/" ? "/index.html" : request.url || "/index.html";
-  const safePath = path.normalize(urlPath).replace(/^(\.\.[/\\])+/, "");
-  const filePath = path.join(ROOT, safePath);
+const server = http.createServer(async (request, response) => {
+  try {
+    const requestUrl = createRequestUrl(request, `http://${HOST}:${PORT}`);
 
-  if (!filePath.startsWith(ROOT)) {
-    response.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
-    response.end("Forbidden");
-    return;
+    if (requestUrl.pathname === "/api/bookings") {
+      await handleBookingsApi(request, response, requestUrl);
+      return;
+    }
+
+    const urlPath = requestUrl.pathname === "/" ? "/index.html" : requestUrl.pathname;
+    const safePath = path.normalize(urlPath).replace(/^(\.\.[/\\])+/, "");
+    const filePath = path.join(ROOT, safePath);
+
+    if (!filePath.startsWith(ROOT)) {
+      response.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });
+      response.end("Forbidden");
+      return;
+    }
+
+    fs.stat(filePath, (error, stats) => {
+      if (!error && stats.isDirectory()) {
+        sendFile(path.join(filePath, "index.html"), response);
+        return;
+      }
+
+      if (!error) {
+        sendFile(filePath, response);
+        return;
+      }
+
+      sendFile(path.join(ROOT, "index.html"), response);
+    });
+  } catch (error) {
+    response.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
+    response.end("Server error");
   }
+});
 
-  fs.stat(filePath, (error, stats) => {
-    if (!error && stats.isDirectory()) {
-      sendFile(path.join(filePath, "index.html"), response);
-      return;
-    }
-
-    if (!error) {
-      sendFile(filePath, response);
-      return;
-    }
-
-    sendFile(path.join(ROOT, "index.html"), response);
+ensureBookingsStore()
+  .then(() => {
+    server.listen(PORT, HOST, () => {
+      console.log(`Club Del Mar is running at http://${HOST}:${PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Could not start booking store", error);
+    process.exitCode = 1;
   });
-});
-
-server.listen(PORT, HOST, () => {
-  console.log(`Club Del Mar is running at http://${HOST}:${PORT}`);
-});

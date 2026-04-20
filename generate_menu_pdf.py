@@ -453,11 +453,21 @@ def build_pdf(page_contents: list[str]) -> bytes:
 def main() -> None:
     food_page = build_page("Food Menu", "Breakfast, bowls, burgers, pizza and sweets", 1, FOOD_COLUMNS)
     drinks_page = build_page("Drinks Menu", "Cocktails, spirits, soft drinks and smoothies", 2, DRINK_COLUMNS)
-    pdf_bytes = build_pdf([food_page, drinks_page])
+    combined_pdf = build_pdf([food_page, drinks_page])
+    food_pdf = build_pdf([food_page])
+    drinks_pdf = build_pdf([drinks_page])
 
-    output_path = Path(__file__).with_name("club-del-mar-menu.pdf")
-    output_path.write_bytes(pdf_bytes)
-    print(output_path)
+    output_dir = Path(__file__).parent
+    outputs = {
+        "club-del-mar-menu.pdf": combined_pdf,
+        "club-del-mar-food-menu.pdf": food_pdf,
+        "club-del-mar-drinks-menu.pdf": drinks_pdf,
+    }
+
+    for filename, pdf_bytes in outputs.items():
+        output_path = output_dir / filename
+        output_path.write_bytes(pdf_bytes)
+        print(output_path)
 
 
 if __name__ == "__main__":
